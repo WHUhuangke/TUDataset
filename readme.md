@@ -14,12 +14,12 @@ Python 3.x
 1.代码变更分析​ → 2. 提交筛选​ → 3. 覆盖对筛选​ → 4. 分支构建​ → 5. 测试执行
 
 # 使用流程
-1. 准备目标项目
+## 1. 准备目标项目
 
 # 将需要分析的项目clone到目标目录
 git clone <repository_url> /TUDataset/TUGraph-main/target_projects/<project_name>
 
-2. 运行代码差异分析
+## 2. 运行代码差异分析
 
 # 进入分析工具目录
 cd /TUDataset/code-diff-analyzer
@@ -31,19 +31,19 @@ echo "/TUDataset/TUGraph-main/target_projects/<project_name>" > repo_list.txt
 mvn compile exec:java -Dexec.mainClass="CodeReviewTool" -Dexec.args="./repo_list.txt"
 
 输出结果: /TUDataset/code-diff-analyzer/code_changes/
-3. 筛选有效提交
+## 3. 筛选有效提交
 
 # 运行初步筛选脚本
 python filter_valid_commits.py
 
 输出结果: /TUDataset/validcommits/
-4. 筛选覆盖的提交对
+## 4. 筛选覆盖的提交对
 
 # 运行覆盖对筛选脚本（支持断点续跑）
 python filter_covered_commits.py
 
 输出结果: /TUDataset/covered_pairs/
-5. 构建和测试分支
+## 5. 构建和测试分支
 
 # 进入Docker环境
 cd /java-evolution-project
@@ -57,7 +57,7 @@ docker run -it --rm java-evolution
 # 在容器内运行分支恢复脚本
 python revert_branch.py
 
-6. 运行特定测试
+## 6. 运行特定测试
 
 # 进入项目目录
 cd /java-evolution-project/commons-csv
