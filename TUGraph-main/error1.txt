@@ -1,0 +1,539 @@
+/Users/mac/Desktop/env/jdk-17.0.10.jdk/Contents/Home/bin/java -Dmaven.multiModuleProjectDirectory=/Users/mac/Desktop/TUGraph -Djansi.passthrough=true -Dmaven.home=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3 -Dclassworlds.conf=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf -Dmaven.ext.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven-event-listener.jar -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64965:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.7.0.jar org.codehaus.classworlds.Launcher -Didea.version=2023.3.4 -Dexec.workingdir=/Users/mac/Desktop/TUGraph -Dexec.args=-classpath %classpath com.github.Main -Dexec.executable=/Users/mac/Desktop/env/jdk-17.0.10.jdk/Contents/Home/bin/java exec:exec
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.github:TUGraph >-------------------------
+[INFO] Building TUGraph 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:exec (default-cli) @ TUGraph ---
+[INFO]  已从配置文件加载配置: /Users/mac/Desktop/TUGraph/config.properties
+[INFO]  ========================================
+[INFO]  TUGraph 知识图谱构建系统
+[INFO]  模式: Multi Version Evolution Analysis
+[INFO]  ========================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  多版本演化流程
+[INFO]  仓库路径: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  目标提交: e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  回溯深度: 10
+[INFO]  时间线策略: Refactoring-Driven
+[INFO]  ========================================
+[INFO]  ========================================
+[INFO]  构建重构驱动的时间线
+[INFO]  目标Commit: e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  最大深度: 100, 时间窗口: 180天
+[INFO]  ========================================
+[INFO]  分析目标commit的变更...
+[INFO]  开始检测重构操作...
+[INFO]    源提交: b25b2509c839f490546586d70f360448bb17e449
+[INFO]    目标提交: e24e3afd879d850abd96ff4e209c79902bb392be
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[INFO]  在提交 b25b2509c839f490546586d70f360448bb17e449 中检测到 7 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e24e3afd879d850abd96ff4e209c79902bb392be ...
+[INFO]  在提交 e24e3afd879d850abd96ff4e209c79902bb392be 中检测到 21 个重构
+[INFO]  ✓ 重构检测完成，共检测到 28 个重构
+[INFO]  ✓ 识别到 17 个变更的方法
+[INFO]  
+[INFO]  开始向前回溯...
+[INFO]  检测单个提交中的重构: b25b2509c839f490546586d70f360448bb17e449
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Analyzed commons-csv [Commits: 2, Errors: 0, Refactorings: 28]
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[INFO]  检测到 7 个重构
+[INFO]  ✓ b25b250 相关 (5 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: a557344f3d2f5b9c2f58a8859533914772a2dbf1
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 30f0e1d6cafb2f6bec24b82493d850e5ae787173 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c62d12a8ec5f987c3107674c03c8577fbbb70033 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 30f0e1d6cafb2f6bec24b82493d850e5ae787173 ...
+[INFO]  检测到 15 个重构
+[INFO]  ✓ 30f0e1d 相关 (2 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: c62d12a8ec5f987c3107674c03c8577fbbb70033
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 8512213bb8b55ffdd7ba20fae03c812f95498f73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c62d12a8ec5f987c3107674c03c8577fbbb70033 ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 8512213bb8b55ffdd7ba20fae03c812f95498f73
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6e683b3ad6b9c9a11c82612c521e132e279dd280
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 77661749e56d7340f95de0480f0cd7d2d5f3bec5
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6f446a96c8efaf498cd856aa2b34ec7120e2bca2
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b13020c488b90d6eeecc44eb35b17bd0d71420e6
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: a75338df2f7954d45cbc21dedb85cc9af9462834
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 29ccda75941536482642b1b9cb18cc255ee68b68
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 4aa7aa7784a771dbe18065f28281db4e3ca0e206
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: cafbed240d2c8861f56443e8cf22fcc7fca3f06f
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1f54e39aae118598d83cc1f9dbcff4324e66e589
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 0fe30e4683a8382e946317c9599509f864513d94
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8f47ad87d2a0e4ab0169cd15a8d2bd2c4bf5c0f8
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 989876ffe2f409e29f8a96d6ee36a87769614780
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 29aac84fc6c53981a42c5391bf141c45b2bee25a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: c5ab03743776f891015796756f2a19ec32923e56
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 222fb8dd3ceed68551e5059fccab58a058dcbb9a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 15ed625b1e3858dc3c79ce558e780035c297c5cc
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1ae2550b59df86dc737de182e218e2bcdc10d861
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 1ae2550b59df86dc737de182e218e2bcdc10d861 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 15ed625b1e3858dc3c79ce558e780035c297c5cc ...
+[INFO]  检测单个提交中的重构: f79416861ab0d4084b338219944bf8d2ff728682
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ae027280f9f8743d047d8a8e2fa63c2b9f3880b7
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: e451e16ec7c686cb770f09e96f2c70e7c04a47c4
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 61f4c4cdcc12e1ca0885fe7d6bd37c877601227b
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 156dddff2221e3459583a4b0bfb84c7e7fb1c187
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8bf4049034e7ae74f12af810e138ab271b9bdcbb
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3c3057db025b900dfb84797f66a2713e3d607e94
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 669023ac454642c34181d82b678539f2a020b3a0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 3c3057db025b900dfb84797f66a2713e3d607e94 ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 669023ac454642c34181d82b678539f2a020b3a0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 2bf6e53e95cc6094f584fe748847fd847b3eafd2
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 2bf6e53e95cc6094f584fe748847fd847b3eafd2 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 669023ac454642c34181d82b678539f2a020b3a0 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 31e8cd01cb0e6c4895fef7993444ef52c947dfb9
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: fb383cf64fb0d408a557b4d7b3fa27a150392c9e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: bc62fc0fb694d423e9e8af951ecd09e1f62e4b39
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3dae014716030c7b550aebbb0f77ad7b1c637e3c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 49c5b2c8d3bfb0e0cd011a82c8fd3079e7b1fe19
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 681cca23144dc4fc56d083c3fd81b24aedb67726
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: de2b73549690c038832719b0331a64de291716fa
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 681cca23144dc4fc56d083c3fd81b24aedb67726 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 49c5b2c8d3bfb0e0cd011a82c8fd3079e7b1fe19 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv de2b73549690c038832719b0331a64de291716fa ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 681cca23144dc4fc56d083c3fd81b24aedb67726 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ef7652b4f2859c5acfb9d639c7d1a076dd6e68e9 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv de2b73549690c038832719b0331a64de291716fa ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ef7652b4f2859c5acfb9d639c7d1a076dd6e68e9
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1ad1538aa7918ba356545355f62c9bb6ae85c792
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 88efa3258f30b2cb94fd12eb2d7318e86e350cb7 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 1ad1538aa7918ba356545355f62c9bb6ae85c792 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 88efa3258f30b2cb94fd12eb2d7318e86e350cb7
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv f7dfe3e72f085583e545f726ef8e1817a3d99c70 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 88efa3258f30b2cb94fd12eb2d7318e86e350cb7 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: f7dfe3e72f085583e545f726ef8e1817a3d99c70
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6bf6ccb66443a50ccbd3db281b95a899b3f0d8cc
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 92e486ac7c671dcaa61f6a8d4bf394f66fb2ef23
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 35771c10e626e6b476ca975776df81f503eb0415
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5f40584b2ce720d1eb6170d3839c413ed8d8564a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 12738c27e2eba2b57ca90e235a2ef1fb3f09c2bf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5f5e0f2c04623f8bb391becf18b9ea9779bde272
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 392cf843095b6ce3fcdb6cfd197fcd28d627184a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 17d031a984975b15d6fa65824bfb698406caf8cd
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 732c2f8b1ce031384e63e0594cc16a2945528891
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 02b398d33f9c4f0b94f8554586d68394315f9cd5
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 947c514bd2183e438d9334aac8b8b506bac6ec11
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 4579bd3be81495965c11c756ae1480b42998c6fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: a0ff618877365a6694e8a1e0ede80d0b85df7894
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: f69526c8f10d8aae6cd094f45ac67132e5d3b6ed
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 81f90443d84112637f967226ebfda99983b65011
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6afa33cde8039a1233568a1ede5ff0de2cf07e41
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 114118c00f8e4e918d639c72ada6c213c7ee3d2d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 6afa33cde8039a1233568a1ede5ff0de2cf07e41 ...
+[INFO]  检测单个提交中的重构: 114118c00f8e4e918d639c72ada6c213c7ee3d2d
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 085294dd853151bba80f826f1c1d6cec0be92865
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 9e1f26ca038798fdaecd67cbc9dd4585e6d6c88b
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 43649ac7e3be12a53f09c8e35f297d50e415c5fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: d1b1f9c09472daf1141aa8a8a89c6d8b82e7960e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ec8f32079db108d62f4708f2d8533a942fae2698
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 56151b05cd44622c7b52c4d952be7c06a644540e
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 9e1f26ca038798fdaecd67cbc9dd4585e6d6c88b ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 085294dd853151bba80f826f1c1d6cec0be92865 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 2e4d5a22c2c82dd771068e725c3bf236c60a3c98
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5c53b34bcf13189d719ed51451fd349117bce736
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ce844263af489ee87ad0c76cd1fa15d0c83d5ebf ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5c53b34bcf13189d719ed51451fd349117bce736 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ce844263af489ee87ad0c76cd1fa15d0c83d5ebf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6711054af0ea9f6330bdec25687f0a1f9b9212aa
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 055695d3827db8ffe4d5a826f73b23d2035e00f0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 6711054af0ea9f6330bdec25687f0a1f9b9212aa ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 055695d3827db8ffe4d5a826f73b23d2035e00f0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b663258fb2716e36b4da8497a28b460515545e0c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: c08ed6caeba4b3493fb7d051a067e656ca455460
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 86eda8a691d59e511dc6c8cb838478f62cdafe4f
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: cfe873e838cfa8d1b4d309c38197efafd9df8c3a
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c08ed6caeba4b3493fb7d051a067e656ca455460 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b663258fb2716e36b4da8497a28b460515545e0c ...
+[INFO]  检测单个提交中的重构: c2dd9bc0314a9b5f4e6abaa4769a86b4d1324fd8
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 7f64d84b8ab864ec9a0d30632bc0928292c82599
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: b63a788e2d88b873b5a3a9236640b7016bcd7514
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b63a788e2d88b873b5a3a9236640b7016bcd7514 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 7f64d84b8ab864ec9a0d30632bc0928292c82599 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e100d623682c411e242bea8fe0b3176fbd0ddcc0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b63a788e2d88b873b5a3a9236640b7016bcd7514 ...
+[INFO]  检测到 3 个重构
+[INFO]  检测单个提交中的重构: e100d623682c411e242bea8fe0b3176fbd0ddcc0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8a827b22345c954e836f9c3ca1d7cb8b24f73ffb
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b98f7fe8197b2e4d46bfad160fc62603edb03a8c
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 8a827b22345c954e836f9c3ca1d7cb8b24f73ffb ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e100d623682c411e242bea8fe0b3176fbd0ddcc0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 502a329653dc1c9bf9f7f2fe0928bcc65df7ea72 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b98f7fe8197b2e4d46bfad160fc62603edb03a8c ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 502a329653dc1c9bf9f7f2fe0928bcc65df7ea72
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ca2e6e7527d9b04e54f10f949d3c2180203e5660
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 0b0003e3b3cdad863092390b4d4ed5dbf78779a5 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ca2e6e7527d9b04e54f10f949d3c2180203e5660 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 0b0003e3b3cdad863092390b4d4ed5dbf78779a5
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c75601d2a3426adf1671572766cc65906812fa73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 0b0003e3b3cdad863092390b4d4ed5dbf78779a5 ...
+[INFO]  检测到 5 个重构
+[INFO]  检测单个提交中的重构: c75601d2a3426adf1671572766cc65906812fa73
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 76981db68af50e0475a2d5d0fcc6bdf87efb18f1
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 76981db68af50e0475a2d5d0fcc6bdf87efb18f1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c75601d2a3426adf1671572766cc65906812fa73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5e5512fd068213d099920b00971ca3fe1185511c ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 76981db68af50e0475a2d5d0fcc6bdf87efb18f1 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5e5512fd068213d099920b00971ca3fe1185511c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: e7a5708a1d8ab216ef9e80b151e7a6683885e10d
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e7a5708a1d8ab216ef9e80b151e7a6683885e10d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5e5512fd068213d099920b00971ca3fe1185511c ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv bf987d5dd60464616078302d80ae43aa9adc0f8d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e7a5708a1d8ab216ef9e80b151e7a6683885e10d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv eddb33206b6d5fc9feb0dc0e751d968268d4d0f0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv bf987d5dd60464616078302d80ae43aa9adc0f8d ...
+[INFO]  检测到 2 个重构
+[INFO]  检测单个提交中的重构: bf987d5dd60464616078302d80ae43aa9adc0f8d
+[INFO]  检测到 1 个重构
+[INFO]  检测单个提交中的重构: eddb33206b6d5fc9feb0dc0e751d968268d4d0f0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b40039bb8bade1c1d71bce6ecc46479e53eeb76c
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv dd7b4b3e7753d177e18c4c0ef90fa89a1f66b673 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b40039bb8bade1c1d71bce6ecc46479e53eeb76c ...
+[INFO]  检测到 2 个重构
+[INFO]  检测单个提交中的重构: dd7b4b3e7753d177e18c4c0ef90fa89a1f66b673
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: af2c3f8b71a63163e2e7ef8b0fe13bcddf162066
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 73ce1f45c081efa7cdbdff15e0cf6c90843c36fa ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv af2c3f8b71a63163e2e7ef8b0fe13bcddf162066 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 73ce1f45c081efa7cdbdff15e0cf6c90843c36fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: bb59de296a53a7af21223420ddf2ea32eaec3db4
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3065d096a714f8b0b475547a75303e6a3bdb861e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: da21c6ce54f093e48481d680647098944158a7cf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 527cbc4e2eb4c5f72ae84bb1ac1f8d953b320736
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 77502971db8dfba9e041bb01671ae35e6f121576
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 403d77f3c2e1e91d77b154214d2bcba2cc57d97e ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 77502971db8dfba9e041bb01671ae35e6f121576 ...
+[INFO]  检测到 363 个重构
+[INFO]  ✓ 7750297 相关 (3 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: 403d77f3c2e1e91d77b154214d2bcba2cc57d97e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 70f193d6e5797bd8d56ca42bd216d645b8bea03f
+[INFO]  检测到 0 个重构
+[INFO]  
+[INFO]  回溯完成:
+[INFO]    总共分析: 100 个commits
+[INFO]    找到相关: 3 个commits
+[INFO]    过滤比例: 97.0%
+[INFO]  ✓ 时间线构建完成: 4 个commits
+[INFO]    耗时: 6.39 秒
+[INFO]  ========================================
+[INFO]  
+[INFO]  时间线构建完成:
+[INFO]    V-3 (7750297) Better Checkstyle
+[INFO]    V-2 (30f0e1d) CSVPrinter.printRecords(ResultSet) knows how to use CSVFormat's maxRows
+[INFO]    V-1 (b25b250) CSVPrinter.printRecords(Iterable) knows how to use CSVFormat's maxRows
+[INFO]    V0 (e24e3af) CSVPrinter.printRecords(Stream) knows how to use CSVFormat's maxRows
+[INFO]  
+[INFO]  ----------------------------------------
+[INFO]  分析提交对: V-1 (b25b250) CSVPrinter.printRecords(Iterable) knows how to use CSVFormat's maxRows -> V0 (e24e3af) CSVPrinter.printRecords(Stream) knows how to use CSVFormat's maxRows
+[INFO]  ----------------------------------------
+[INFO]  使用显式指定的提交对: V1=b25b2509c839f490546586d70f360448bb17e449, V2=e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  初始化演化分析组件...
+[INFO]  初始化节点匹配策略，匹配器数量: 2
+[INFO]  组件初始化完成
+[INFO]  ========================================
+[INFO]  开始版本演化分析
+[INFO]  Base Version: V-1 [b25b250]
+[INFO]  Target Version: V0 [e24e3af]
+[INFO]  ========================================
+[INFO]  Git 仓库已打开: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  ========================================
+[INFO]  分析提交: V-1 [b25b250]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 b25b2509c839f490546586d70f360448bb17e449
+[INFO]  开始解析提交 b25b250 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[INFO]  Building Spoon model...
+[main] ERROR spoon.Launcher - error: JDTCommentBuilder crashed with the error, some comments may be missing in the model: java.lang.IndexOutOfBoundsException: Index: -1
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 48 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/48)[INFO]  Created 6 packages
+[INFO]  Created 48 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [                    ] 4% (2/48)[main] WARN spoon.Launcher - Cannot load class: org.skife.csv.ReaderCallback with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+[main] WARN spoon.Launcher - Cannot load class: org.skife.csv.ReaderCallback with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+[main] WARN spoon.Launcher - Cannot load class: org.skife.csv.ReaderCallback with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+  Progress: [███████             ] 39% (19/48)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 6
+Files: 48
+Types: 61
+Methods: 900
+Fields: 191
+Total: 1207
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (48/48) - 652ms
+[INFO]  Phase completed: Extracting Nodes - 653ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 48 package relations
+Extracting file relations...
+Created 48 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 996 declares relations
+Extracting method relations...
+[ERROR] Analysis failed
+java.lang.NullPointerException: Cannot invoke "spoon.reflect.reference.CtTypeReference.getQualifiedName()" because the return value of "spoon.reflect.reference.CtExecutableReference.getDeclaringType()" is null
+	at com.github.spoon.extractors.CallGraphExtractor.handleMethodCall(CallGraphExtractor.java:149)
+	at com.github.spoon.extractors.CallGraphExtractor$1.visitCtInvocation(CallGraphExtractor.java:47)
+	at spoon.support.reflect.code.CtInvocationImpl.accept(CtInvocationImpl.java:46)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtLocalVariable(CtScanner.java:562)
+	at spoon.support.reflect.code.CtLocalVariableImpl.accept(CtLocalVariableImpl.java:53)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:154)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:326)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:58)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtMethod(CtScanner.java:597)
+	at spoon.support.reflect.declaration.CtMethodImpl.accept(CtMethodImpl.java:59)
+	at com.github.spoon.extractors.CallGraphExtractor.extractMethodCalls(CallGraphExtractor.java:44)
+	at com.github.spoon.EdgeExtractor.extractMethodRelations(EdgeExtractor.java:291)
+	at com.github.spoon.EdgeExtractor.extract(EdgeExtractor.java:68)
+	at com.github.spoon.ProjectAnalyzer.extractEdges(ProjectAnalyzer.java:248)
+	at com.github.spoon.ProjectAnalyzer.analyze(ProjectAnalyzer.java:43)
+	at com.github.evolution.EvolutionAnalyzer.analyzeVersion(EvolutionAnalyzer.java:273)
+	at com.github.evolution.EvolutionAnalyzer.analyze(EvolutionAnalyzer.java:217)
+	at com.github.pipeline.MultiVersionEvolutionPipeline.execute(MultiVersionEvolutionPipeline.java:98)
+	at com.github.Main.main(Main.java:56)
+[ERROR] 演化分析失败
+java.lang.RuntimeException: Failed to analyze project
+	at com.github.spoon.ProjectAnalyzer.analyze(ProjectAnalyzer.java:52)
+	at com.github.evolution.EvolutionAnalyzer.analyzeVersion(EvolutionAnalyzer.java:273)
+	at com.github.evolution.EvolutionAnalyzer.analyze(EvolutionAnalyzer.java:217)
+	at com.github.pipeline.MultiVersionEvolutionPipeline.execute(MultiVersionEvolutionPipeline.java:98)
+	at com.github.Main.main(Main.java:56)
+Caused by: java.lang.NullPointerException: Cannot invoke "spoon.reflect.reference.CtTypeReference.getQualifiedName()" because the return value of "spoon.reflect.reference.CtExecutableReference.getDeclaringType()" is null
+	at com.github.spoon.extractors.CallGraphExtractor.handleMethodCall(CallGraphExtractor.java:149)
+	at com.github.spoon.extractors.CallGraphExtractor$1.visitCtInvocation(CallGraphExtractor.java:47)
+	at spoon.support.reflect.code.CtInvocationImpl.accept(CtInvocationImpl.java:46)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtLocalVariable(CtScanner.java:562)
+	at spoon.support.reflect.code.CtLocalVariableImpl.accept(CtLocalVariableImpl.java:53)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:154)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:326)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:58)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtMethod(CtScanner.java:597)
+	at spoon.support.reflect.declaration.CtMethodImpl.accept(CtMethodImpl.java:59)
+	at com.github.spoon.extractors.CallGraphExtractor.extractMethodCalls(CallGraphExtractor.java:44)
+	at com.github.spoon.EdgeExtractor.extractMethodRelations(EdgeExtractor.java:291)
+	at com.github.spoon.EdgeExtractor.extract(EdgeExtractor.java:68)
+	at com.github.spoon.ProjectAnalyzer.extractEdges(ProjectAnalyzer.java:248)
+	at com.github.spoon.ProjectAnalyzer.analyze(ProjectAnalyzer.java:43)
+	... 4 more
+[ERROR] 执行失败: Evolution analysis failed
+java.lang.RuntimeException: Evolution analysis failed
+	at com.github.evolution.EvolutionAnalyzer.analyze(EvolutionAnalyzer.java:237)
+	at com.github.pipeline.MultiVersionEvolutionPipeline.execute(MultiVersionEvolutionPipeline.java:98)
+	at com.github.Main.main(Main.java:56)
+Caused by: java.lang.RuntimeException: Failed to analyze project
+	at com.github.spoon.ProjectAnalyzer.analyze(ProjectAnalyzer.java:52)
+	at com.github.evolution.EvolutionAnalyzer.analyzeVersion(EvolutionAnalyzer.java:273)
+	at com.github.evolution.EvolutionAnalyzer.analyze(EvolutionAnalyzer.java:217)
+	... 2 more
+Caused by: java.lang.NullPointerException: Cannot invoke "spoon.reflect.reference.CtTypeReference.getQualifiedName()" because the return value of "spoon.reflect.reference.CtExecutableReference.getDeclaringType()" is null
+	at com.github.spoon.extractors.CallGraphExtractor.handleMethodCall(CallGraphExtractor.java:149)
+	at com.github.spoon.extractors.CallGraphExtractor$1.visitCtInvocation(CallGraphExtractor.java:47)
+	at spoon.support.reflect.code.CtInvocationImpl.accept(CtInvocationImpl.java:46)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtLocalVariable(CtScanner.java:562)
+	at spoon.support.reflect.code.CtLocalVariableImpl.accept(CtLocalVariableImpl.java:53)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:154)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:326)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:58)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:199)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:189)
+	at spoon.reflect.visitor.CtScanner.visitCtMethod(CtScanner.java:597)
+	at spoon.support.reflect.declaration.CtMethodImpl.accept(CtMethodImpl.java:59)
+	at com.github.spoon.extractors.CallGraphExtractor.extractMethodCalls(CallGraphExtractor.java:44)
+	at com.github.spoon.EdgeExtractor.extractMethodRelations(EdgeExtractor.java:291)
+	at com.github.spoon.EdgeExtractor.extract(EdgeExtractor.java:68)
+	at com.github.spoon.ProjectAnalyzer.extractEdges(ProjectAnalyzer.java:248)
+	at com.github.spoon.ProjectAnalyzer.analyze(ProjectAnalyzer.java:43)
+	... 4 more
+[INFO]  Git 仓库已关闭
+[ERROR] Command execution failed.
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+    at org.apache.commons.exec.DefaultExecutor.executeInternal (DefaultExecutor.java:355)
+    at org.apache.commons.exec.DefaultExecutor.execute (DefaultExecutor.java:253)
+    at org.codehaus.mojo.exec.ExecMojo.executeCommandLine (ExecMojo.java:903)
+    at org.codehaus.mojo.exec.ExecMojo.executeCommandLine (ExecMojo.java:863)
+    at org.codehaus.mojo.exec.ExecMojo.execute (ExecMojo.java:454)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:568)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+    at org.codehaus.classworlds.Launcher.main (Launcher.java:47)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.067 s
+[INFO] Finished at: 2025-11-04T09:53:01+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.5.0:exec (default-cli) on project TUGraph: Command execution failed.: Process exited with an error: 1 (Exit value: 1) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+Process finished with exit code 1

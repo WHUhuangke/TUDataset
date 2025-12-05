@@ -1,0 +1,1204 @@
+[
+  {
+    "commit": "5599e797dbb97eade55949a3a47afbdb854320db",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.introspect.ConcreteBeanPropertyBaseTest#testFormatPrecedenceIsFollowed()",
+        "test_method_name": "testFormatPrecedenceIsFollowed",
+        "focal_method_id": "com.fasterxml.jackson.databind.cfg.MapperConfig#getDefaultRadix()",
+        "focal_method_name": "getDefaultRadix",
+        "test_line": 172,
+        "test_statement": "mapperConfig.getDefaultRadix()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/introspect/ConcreteBeanPropertyBaseTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/cfg/MapperConfig.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.introspect.ConcreteBeanPropertyBaseTest#testFormatPrecedenceIsFollowed()",
+        "test_method_name": "testFormatPrecedenceIsFollowed",
+        "focal_method_id": "com.fasterxml.jackson.databind.introspect.ConcreteBeanPropertyBase#findPropertyFormat(com.fasterxml.jackson.databind.cfg.MapperConfig,java.lang.Class)",
+        "focal_method_name": "findPropertyFormat",
+        "test_line": 176,
+        "test_statement": "testConcreteBeanProperty.findPropertyFormat(mapperConfig, someType)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/introspect/ConcreteBeanPropertyBaseTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/introspect/ConcreteBeanPropertyBase.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.format.DifferentRadixNumberFormatTest#testUsingDefaultConfigOverrideRadixToSerializeAsHexString()",
+        "test_method_name": "testUsingDefaultConfigOverrideRadixToSerializeAsHexString",
+        "focal_method_id": "com.fasterxml.jackson.databind.ObjectMapper#setDefaultFormat(java.lang.String)",
+        "focal_method_name": "setDefaultFormat",
+        "test_line": 177,
+        "test_statement": "mapper.setDefaultFormat(HEX_RADIX)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/format/DifferentRadixNumberFormatTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "722182b5f0c5691e995bc185037ac37c3329df90",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.format.DifferentRadixNumberFormatTest#testUsingBaseSettingRadixToSerializeAsHexString()",
+        "test_method_name": "testUsingBaseSettingRadixToSerializeAsHexString",
+        "focal_method_id": "com.fasterxml.jackson.databind.ObjectMapper#setRadix(int)",
+        "focal_method_name": "setRadix",
+        "test_line": 147,
+        "test_statement": "mapper.setRadix(16)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/format/DifferentRadixNumberFormatTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.format.DifferentRadixNumberFormatTest#testAllIntegralTypesGetSerializedWithRadix()",
+        "test_method_name": "testAllIntegralTypesGetSerializedWithRadix",
+        "focal_method_id": "com.fasterxml.jackson.databind.ObjectMapper#setRadix(int)",
+        "focal_method_name": "setRadix",
+        "test_line": 167,
+        "test_statement": "mapper.setRadix(16)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/format/DifferentRadixNumberFormatTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "d7fff6684495418508ea50ab1c728d5278c0106a",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testExceptionWithEOF()",
+        "test_method_name": "testExceptionWithEOF",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 112,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testHandlingOfUnrecognized()",
+        "test_method_name": "testHandlingOfUnrecognized",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 63,
+        "test_statement": "exc.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testExceptionWithEmpty()",
+        "test_method_name": "testExceptionWithEmpty",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 78,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.convert.CoerceToBooleanTest#_verifyBooleanCoerceFailReason(com.fasterxml.jackson.databind.exc.MismatchedInputException,com.fasterxml.jackson.core.JsonToken,java.lang.String)",
+        "test_method_name": "_verifyBooleanCoerceFailReason",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 420,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/convert/CoerceToBooleanTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "98abb9342de516c74149b9ddc22565200fe46612",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testExceptionWithEOF()",
+        "test_method_name": "testExceptionWithEOF",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 112,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testExceptionWithEmpty()",
+        "test_method_name": "testExceptionWithEmpty",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 78,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.convert.CoerceToBooleanTest#_verifyBooleanCoerceFailReason(com.fasterxml.jackson.databind.exc.MismatchedInputException,com.fasterxml.jackson.core.JsonToken,java.lang.String)",
+        "test_method_name": "_verifyBooleanCoerceFailReason",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 417,
+        "test_statement": "e.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/convert/CoerceToBooleanTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.exc.DeserExceptionTypeTest#testHandlingOfUnrecognized()",
+        "test_method_name": "testHandlingOfUnrecognized",
+        "focal_method_id": "com.fasterxml.jackson.databind.exc.MismatchedInputException#getCurrentToken()",
+        "focal_method_name": "getCurrentToken",
+        "test_line": 63,
+        "test_statement": "exc.getCurrentToken()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/exc/DeserExceptionTypeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/MismatchedInputException.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "cfef132dbacbc6ed612051f81e88fb37c5632154",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testRemoveNulls()",
+        "test_method_name": "testRemoveNulls",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ContainerNode#removeNulls()",
+        "focal_method_name": "removeNulls",
+        "test_line": 607,
+        "test_statement": "_objNode(\"{'a':null,'b':2,'c':null}\").removeNulls()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ContainerNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testRemoveIf()",
+        "test_method_name": "testRemoveIf",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#removeIf(java.util.function.Predicate)",
+        "focal_method_name": "removeIf",
+        "test_line": 595,
+        "test_statement": "_objNode(\"{'a':1, 'b':2, 'c':3}\").removeIf(value -> value.asInt() <= 2)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testRemoveNulls()",
+        "test_method_name": "testRemoveNulls",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ContainerNode#removeNulls()",
+        "focal_method_name": "removeNulls",
+        "test_line": 534,
+        "test_statement": "_arrayNode(\"[null, null, 2, null]\").removeNulls()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ContainerNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testRemoveIf()",
+        "test_method_name": "testRemoveIf",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#removeIf(java.util.function.Predicate)",
+        "focal_method_name": "removeIf",
+        "test_line": 522,
+        "test_statement": "_arrayNode(\"[2, 1, 3]\").removeIf(value -> value.asInt() <= 2)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "ba310029a78d2aefacad4251c15dc00eb89cf118",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnArray()",
+        "test_method_name": "testOptionalAccessorOnArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 230,
+        "test_statement": "arrayNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#valueStream()",
+        "focal_method_name": "valueStream",
+        "test_line": 571,
+        "test_statement": "obj.valueStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#forEachEntry(java.util.function.BiConsumer)",
+        "focal_method_name": "forEachEntry",
+        "test_line": 582,
+        "test_statement": "obj.forEachEntry((k, v) -> {\\n    map.put(k, v);\\n})",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#propertyStream()",
+        "focal_method_name": "propertyStream",
+        "test_line": 576,
+        "test_statement": "obj.propertyStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.MissingNodeTest#testMissingViaMapper()",
+        "test_method_name": "testMissingViaMapper",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#asOptional()",
+        "focal_method_name": "asOptional",
+        "test_line": 65,
+        "test_statement": "onode.asOptional()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/MissingNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnArray()",
+        "test_method_name": "testOptionalAccessorOnArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 225,
+        "test_statement": "arrayNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#forEachEntry(java.util.function.BiConsumer)",
+        "focal_method_name": "forEachEntry",
+        "test_line": 508,
+        "test_statement": "// And then empty forEachEntry()\\narr.forEachEntry((k, v) -> {\\n    throw new UnsupportedOperationException();\\n})",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.type.TypeFactoryTest#testRawCollections()",
+        "test_method_name": "testRawCollections",
+        "focal_method_id": "com.fasterxml.jackson.databind.type.TypeFactory#unknownType()",
+        "focal_method_name": "unknownType",
+        "test_line": 681,
+        "test_statement": "TypeFactory.unknownType()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/type/TypeFactoryTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnNumbers()",
+        "test_method_name": "testOptionalAccessorOnNumbers",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 249,
+        "test_statement": "intNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnNumbers()",
+        "test_method_name": "testOptionalAccessorOnNumbers",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 250,
+        "test_statement": "intNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnObject()",
+        "test_method_name": "testOptionalAccessorOnObject",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 237,
+        "test_statement": "objectNode.optional(\"existingField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#propertyStream()",
+        "focal_method_name": "propertyStream",
+        "test_line": 503,
+        "test_statement": "arr.propertyStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testNullChecking()",
+        "test_method_name": "testNullChecking",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 253,
+        "test_statement": "o1.optional(\"x\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnObject()",
+        "test_method_name": "testOptionalAccessorOnObject",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 240,
+        "test_statement": "objectNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testAsOptional()",
+        "test_method_name": "testAsOptional",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#asOptional()",
+        "focal_method_name": "asOptional",
+        "test_line": 292,
+        "test_statement": "missingNode.asOptional()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnOtherTypes()",
+        "test_method_name": "testOptionalAccessorOnOtherTypes",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 274,
+        "test_statement": "textNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.type.TypeFactoryTest#testRawMaps()",
+        "test_method_name": "testRawMaps",
+        "focal_method_id": "com.fasterxml.jackson.databind.type.TypeFactory#unknownType()",
+        "focal_method_name": "unknownType",
+        "test_line": 697,
+        "test_statement": "TypeFactory.unknownType()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/type/TypeFactoryTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testBasics()",
+        "test_method_name": "testBasics",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#fieldNames()",
+        "focal_method_name": "fieldNames",
+        "test_line": 147,
+        "test_statement": "n.fieldNames()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testBasics()",
+        "test_method_name": "testBasics",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 149,
+        "test_statement": "n.optional(\"a\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testSimpleArray()",
+        "test_method_name": "testSimpleArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 443,
+        "test_statement": "result.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testDirectCreation()",
+        "test_method_name": "testDirectCreation",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 51,
+        "test_statement": "n.optional(\"x\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnOtherTypes()",
+        "test_method_name": "testOptionalAccessorOnOtherTypes",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 273,
+        "test_statement": "textNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#valueStream()",
+        "focal_method_name": "valueStream",
+        "test_line": 498,
+        "test_statement": "arr.valueStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testDirectCreation()",
+        "test_method_name": "testDirectCreation",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#elements()",
+        "focal_method_name": "elements",
+        "test_line": 38,
+        "test_statement": "n.elements()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "9e63036ba7719639e2cd1ab1e33eef0eb669a517",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnObject()",
+        "test_method_name": "testOptionalAccessorOnObject",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 240,
+        "test_statement": "objectNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testSimpleArray()",
+        "test_method_name": "testSimpleArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 443,
+        "test_statement": "result.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnOtherTypes()",
+        "test_method_name": "testOptionalAccessorOnOtherTypes",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 274,
+        "test_statement": "textNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testNullChecking()",
+        "test_method_name": "testNullChecking",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 253,
+        "test_statement": "o1.optional(\"x\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnNumbers()",
+        "test_method_name": "testOptionalAccessorOnNumbers",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 250,
+        "test_statement": "intNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnOtherTypes()",
+        "test_method_name": "testOptionalAccessorOnOtherTypes",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 273,
+        "test_statement": "textNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnArray()",
+        "test_method_name": "testOptionalAccessorOnArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 230,
+        "test_statement": "arrayNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnArray()",
+        "test_method_name": "testOptionalAccessorOnArray",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#optional(int)",
+        "focal_method_name": "optional",
+        "test_line": 225,
+        "test_statement": "arrayNode.optional(0)",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnObject()",
+        "test_method_name": "testOptionalAccessorOnObject",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 237,
+        "test_statement": "objectNode.optional(\"existingField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testOptionalAccessorOnNumbers()",
+        "test_method_name": "testOptionalAccessorOnNumbers",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 249,
+        "test_statement": "intNode.optional(\"anyField\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testBasics()",
+        "test_method_name": "testBasics",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#fieldNames()",
+        "focal_method_name": "fieldNames",
+        "test_line": 147,
+        "test_statement": "n.fieldNames()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testDirectCreation()",
+        "test_method_name": "testDirectCreation",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 51,
+        "test_statement": "n.optional(\"x\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testBasics()",
+        "test_method_name": "testBasics",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#optional(java.lang.String)",
+        "focal_method_name": "optional",
+        "test_line": 149,
+        "test_statement": "n.optional(\"a\")",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "3e0d39b339448b6b3fcc9b2a1b41f736635abc16",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.JsonNodeBasicTest#testAsOptional()",
+        "test_method_name": "testAsOptional",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#asOptional()",
+        "focal_method_name": "asOptional",
+        "test_line": 225,
+        "test_statement": "missingNode.asOptional()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/JsonNodeBasicTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.MissingNodeTest#testMissingViaMapper()",
+        "test_method_name": "testMissingViaMapper",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#asOptional()",
+        "focal_method_name": "asOptional",
+        "test_line": 65,
+        "test_statement": "onode.asOptional()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/MissingNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "8bc8a9f94a1142e10f9ba8728ab49a36f8d7e934",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#propertyStream()",
+        "focal_method_name": "propertyStream",
+        "test_line": 574,
+        "test_statement": "obj.propertyStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#propertyStream()",
+        "focal_method_name": "propertyStream",
+        "test_line": 498,
+        "test_statement": "arr.propertyStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "METHOD",
+          "SOURCE_METHOD"
+        ]
+      }
+    ]
+  },
+  {
+    "commit": "a7cf2f33ef0e963f6b6df14999c69c7b515101ab",
+    "pairs": [
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#forEachEntry(java.util.function.BiConsumer)",
+        "focal_method_name": "forEachEntry",
+        "test_line": 580,
+        "test_statement": "obj.forEachEntry((k, v) -> {\\n    map.put(k, v);\\n})",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#entryStream()",
+        "focal_method_name": "entryStream",
+        "test_line": 574,
+        "test_statement": "obj.entryStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ArrayNode#valueStream()",
+        "focal_method_name": "valueStream",
+        "test_line": 493,
+        "test_statement": "arr.valueStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#forEachEntry(java.util.function.BiConsumer)",
+        "focal_method_name": "forEachEntry",
+        "test_line": 503,
+        "test_statement": "// And then empty forEachEntry()\\narr.forEachEntry((k, v) -> {\\n    throw new UnsupportedOperationException();\\n})",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ObjectNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.node.ObjectNode#valueStream()",
+        "focal_method_name": "valueStream",
+        "test_line": 569,
+        "test_statement": "obj.valueStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ObjectNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      },
+      {
+        "test_method_id": "com.fasterxml.jackson.databind.node.ArrayNodeTest#testStreamMethods()",
+        "test_method_name": "testStreamMethods",
+        "focal_method_id": "com.fasterxml.jackson.databind.JsonNode#entryStream()",
+        "focal_method_name": "entryStream",
+        "test_line": 498,
+        "test_statement": "arr.entryStream()",
+        "test_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/test/java/com/fasterxml/jackson/databind/node/ArrayNodeTest.java",
+        "focal_file_path": "/home/hk/ai4se/bin/TUGraph-main/target_projects/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+        "test_labels": [
+          "METHOD",
+          "TEST_METHOD"
+        ],
+        "focal_labels": [
+          "SOURCE_METHOD",
+          "METHOD"
+        ]
+      }
+    ]
+  }
+]

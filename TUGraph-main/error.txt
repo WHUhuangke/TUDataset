@@ -1,0 +1,60 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.github:TUGraph >-------------------------
+[INFO] Building TUGraph 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ TUGraph ---
+[INFO] skip non existing resourceDirectory /Users/mac/Desktop/TUGraph/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ TUGraph ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 91 source files with javac [debug target 17] to target/classes
+[INFO] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/index/NodeIndex.java: 某些输入文件使用或覆盖了已过时的 API。
+[INFO] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/index/NodeIndex.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[142,15] 无法将类 com.github.logging.GraphLogger中的方法 warn应用到给定类型;
+  需要: java.lang.String
+  找到:    java.lang.String,java.lang.String,java.lang.String
+  原因: 实际参数列表和形式参数列表长度不同
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[143,15] 无法将类 com.github.logging.GraphLogger中的方法 debug应用到给定类型;
+  需要: java.lang.String
+  找到:    java.lang.String,java.lang.Exception
+  原因: 实际参数列表和形式参数列表长度不同
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[149,19] 无法将类 com.github.logging.GraphLogger中的方法 info应用到给定类型;
+  需要: java.lang.String
+  找到:    java.lang.String,int
+  原因: 实际参数列表和形式参数列表长度不同
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.489 s
+[INFO] Finished at: 2025-11-04T11:11:55+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project TUGraph: Compilation failure: Compilation failure: 
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[142,15] 无法将类 com.github.logging.GraphLogger中的方法 warn应用到给定类型;
+[ERROR]   需要: java.lang.String
+[ERROR]   找到:    java.lang.String,java.lang.String,java.lang.String
+[ERROR]   原因: 实际参数列表和形式参数列表长度不同
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[143,15] 无法将类 com.github.logging.GraphLogger中的方法 debug应用到给定类型;
+[ERROR]   需要: java.lang.String
+[ERROR]   找到:    java.lang.String,java.lang.Exception
+[ERROR]   原因: 实际参数列表和形式参数列表长度不同
+[ERROR] /Users/mac/Desktop/TUGraph/src/main/java/com/github/spoon/ProjectAnalyzer.java:[149,19] 无法将类 com.github.logging.GraphLogger中的方法 info应用到给定类型;
+[ERROR]   需要: java.lang.String
+[ERROR]   找到:    java.lang.String,int
+[ERROR]   原因: 实际参数列表和形式参数列表长度不同
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+Process finished with exit code 1

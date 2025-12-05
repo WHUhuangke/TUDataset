@@ -1,0 +1,73 @@
+# ========================================
+# TUGraph 知识图谱构建系统 - 配置文件示例
+# ========================================
+
+# ==================== 通用配置 ====================
+
+# 分析模式: SINGLE_VERSION / EVOLUTION / MULTI_EVOLUTION
+analysis.mode=SINGLE_VERSION
+
+# 项目路径
+# - SINGLE_VERSION: 要分析的 Java 项目根目录
+# - EVOLUTION / MULTI_EVOLUTION: Git 仓库根目录（必须包含 .git 目录）
+project.path=/path/to/your/project
+
+# 项目名称 (用于导出/导入目录命名，留空则自动从路径提取)
+project.name=my-project
+
+# Neo4j Home 路径 (用于批量导入)
+neo4j.home=/usr/local/neo4j
+
+# 日志级别: DEBUG, INFO, WARN, ERROR
+log.level=INFO
+
+
+# ==================== 演化配置 ====================
+# 仅当 analysis.mode=EVOLUTION 或 MULTI_EVOLUTION 时使用
+
+# 目标提交 (Git commit hash，可用 HEAD、短 hash 或相对引用)
+evolution.commit=HEAD
+
+# 是否使用 RefactoringMiner 检测重构 (true/false)
+evolution.useRefactoringMiner=true
+
+# 多版本回溯深度 (MULTI_EVOLUTION 专用，默认 5，表示向前追溯 5 个父提交)
+evolution.historyWindow=5
+
+
+# ==================== 使用示例 ====================
+
+# 示例 1: 单版本模式分析本地项目
+# analysis.mode=SINGLE_VERSION
+# project.path=/Users/mac/workspace/my-java-app
+# project.name=my-java-app
+# neo4j.home=/usr/local/neo4j
+
+# 示例 2: 演化模式分析目标提交与其父提交的变化
+# analysis.mode=EVOLUTION
+# project.path=/Users/mac/workspace/commons-lang
+# evolution.commit=commons-lang-3.13.0
+# project.name=commons-lang-evolution
+# neo4j.home=/usr/local/neo4j
+# evolution.useRefactoringMiner=true
+
+# 示例 3: 多版本演化模式，回溯最近五次提交
+# analysis.mode=MULTI_EVOLUTION
+# project.path=/Users/mac/workspace/commons-lang
+# evolution.commit=HEAD
+# evolution.historyWindow=5
+# project.name=commons-lang-timeline
+# evolution.useRefactoringMiner=true
+
+
+# ==================== 注意事项 ====================
+
+# 1. 路径建议使用绝对路径
+# 2. Git commit hash 可以是完整 hash 或短 hash (至少 7 位)
+# 3. 演化模式会构建多个知识图谱，执行时间可能较长
+# 4. RefactoringMiner 能识别 40+ 种重构类型，建议在资源允许时开启
+# 5. 确保 Git 仓库没有未提交的更改，否则可能导致检出失败
+# 6. 单版本与演化模式都使用 project.path 配置:
+#    - 单版本: 指向 Java 项目根目录
+#    - 演化: 指向 Git 仓库根目录（必须包含 .git）
+# 7. 旧配置 evolution.repoPath 已废弃，请改用 project.path

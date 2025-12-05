@@ -1,0 +1,347 @@
+/*
+ * TUGraph Neo4j Browser 样式配置
+ * 
+ * 使用方法:
+ * 1. 在 Neo4j Browser 中点击左下角的 "Browser Style" 按钮（或点击右上角设置图标）
+ * 2. 将本文件内容复制粘贴到样式编辑器中
+ * 3. 点击 "Apply" 应用样式
+ */
+
+/* ========================================
+ * 节点样式 - 按类型分类
+ * ======================================== */
+
+/* PROJECT - 项目节点 */
+node.PROJECT {
+  diameter: 80px;
+  color: #8E44AD;
+  border-color: #6C3483;
+  border-width: 3px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 14px;
+}
+
+/* PACKAGE - 包节点 */
+node.PACKAGE {
+  diameter: 65px;
+  color: #3498DB;
+  border-color: #2874A6;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 12px;
+}
+
+/* FILE - 文件节点 */
+node.FILE {
+  diameter: 55px;
+  color: #16A085;
+  border-color: #117A65;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 11px;
+}
+
+/* ========================================
+ * TYPE 类型节点 - 蓝色系
+ * ======================================== */
+
+/* TYPE - 通用类型（回退） */
+node.TYPE {
+  diameter: 60px;
+  color: #5DADE2;
+  border-color: #2E86C1;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 12px;
+}
+
+/* CLASS - 类 */
+node.CLASS {
+  diameter: 60px;
+  color: #2980B9;
+  border-color: #1F618D;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 12px;
+}
+
+/* INTERFACE - 接口 */
+node.INTERFACE {
+  diameter: 60px;
+  color: #5499C7;
+  border-color: #2E86C1;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 12px;
+}
+
+/* ENUM - 枚举 */
+node.ENUM {
+  diameter: 55px;
+  color: #85C1E9;
+  border-color: #5DADE2;
+  border-width: 2px;
+  text-color-internal: #000000;
+  caption: "{name}";
+  font-size: 11px;
+}
+
+/* ANNOTATION - 注解 */
+node.ANNOTATION {
+  diameter: 55px;
+  color: #AED6F1;
+  border-color: #85C1E9;
+  border-width: 2px;
+  text-color-internal: #000000;
+  caption: "{name}";
+  font-size: 11px;
+}
+
+/* TEST_CLASS - 测试类 */
+node.TEST_CLASS {
+  diameter: 60px;
+  color: #1A5490;
+  border-color: #154360;
+  border-width: 3px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 12px;
+}
+
+/* ========================================
+ * METHOD 方法节点 - 绿色系
+ * ======================================== */
+
+/* METHOD - 通用方法（回退） */
+node.METHOD {
+  diameter: 50px;
+  color: #27AE60;
+  border-color: #1E8449;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 10px;
+}
+
+/* CONSTRUCTOR - 构造方法 */
+node.CONSTRUCTOR {
+  diameter: 50px;
+  color: #28B463;
+  border-color: #1E8449;
+  border-width: 3px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 10px;
+}
+
+/* TEST_METHOD - 测试方法 */
+node.TEST_METHOD {
+  diameter: 50px;
+  color: #52BE80;
+  border-color: #27AE60;
+  border-width: 2px;
+  text-color-internal: #000000;
+  caption: "{name}";
+  font-size: 10px;
+}
+
+/* ========================================
+ * FIELD 字段节点 - 橙色系
+ * ======================================== */
+
+/* FIELD - 字段 */
+node.FIELD {
+  diameter: 40px;
+  color: #E67E22;
+  border-color: #CA6F1E;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: "{name}";
+  font-size: 9px;
+}
+
+/* ========================================
+ * 演化状态样式
+ * ======================================== */
+
+/* ADDED - 新增节点 */
+node[versionStatus = "ADDED"] {
+  border-color: #2ECC71;
+  border-width: 4px;
+}
+
+/* DELETED - 删除节点 */
+node[versionStatus = "DELETED"] {
+  border-color: #E74C3C;
+  border-width: 4px;
+  color: #FADBD8;
+}
+
+/* MODIFIED - 修改节点 */
+node[versionStatus = "MODIFIED"] {
+  border-color: #F39C12;
+  border-width: 4px;
+}
+
+/* UNCHANGED - 未变化节点 */
+node[versionStatus = "UNCHANGED"] {
+  border-color: #95A5A6;
+  border-width: 1px;
+}
+
+/* ========================================
+ * 边样式 - 按关系类型分类
+ * ======================================== */
+
+/* CALLS - 调用关系 (绿色) */
+relationship.CALLS {
+  color: #27AE60;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* READS - 读取关系 (蓝色) */
+relationship.READS {
+  color: #3498DB;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* WRITES - 写入关系 (红色) */
+relationship.WRITES {
+  color: #E74C3C;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* DECLARES - 声明关系 (紫色) */
+relationship.DECLARES {
+  color: #9B59B6;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* DECLARES_TYPE - 类型声明 (深紫色) */
+relationship.DECLARES_TYPE {
+  color: #8E44AD;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* EXTENDS - 继承关系 (橙色) */
+relationship.EXTENDS {
+  color: #E67E22;
+  shaft-width: 3px;
+  caption: "{edgeType}";
+  font-size: 10px;
+}
+
+/* IMPLEMENTS - 实现关系 (黄色) */
+relationship.IMPLEMENTS {
+  color: #F39C12;
+  shaft-width: 3px;
+  caption: "{edgeType}";
+  font-size: 10px;
+}
+
+/* CONTAINS_FILE - 文件包含 (青色) */
+relationship.CONTAINS_FILE {
+  color: #16A085;
+  shaft-width: 2px;
+  caption: "";
+  font-size: 8px;
+}
+
+/* IN_PACKAGE - 包归属 (浅蓝) */
+relationship.IN_PACKAGE {
+  color: #5DADE2;
+  shaft-width: 2px;
+  caption: "";
+  font-size: 8px;
+}
+
+/* HAS_PACKAGE - 项目包含包 (深蓝) */
+relationship.HAS_PACKAGE {
+  color: #2874A6;
+  shaft-width: 2px;
+  caption: "";
+  font-size: 8px;
+}
+
+/* TESTS - 测试关系 (粉色) */
+relationship.TESTS {
+  color: #EC7063;
+  shaft-width: 2px;
+  caption: "{edgeType}";
+  font-size: 9px;
+}
+
+/* USES_PARAMETER - 使用参数 (灰色) */
+relationship.USES_PARAMETER {
+  color: #95A5A6;
+  shaft-width: 1px;
+  caption: "";
+  font-size: 8px;
+}
+
+/* RETURN_TYPE - 返回类型 (棕色) */
+relationship.RETURN_TYPE {
+  color: #A04000;
+  shaft-width: 2px;
+  caption: "";
+  font-size: 8px;
+}
+
+/* ========================================
+ * 演化关系样式
+ * ======================================== */
+
+/* EVOLVES_FROM - 演化关系 (金色) */
+relationship.EVOLVES_FROM {
+  color: #F1C40F;
+  shaft-width: 3px;
+  caption: "{refactoringType}";
+  font-size: 10px;
+}
+
+/* REFACTORED_TO - 重构关系 (金黄色) */
+relationship.REFACTORED_TO {
+  color: #F39C12;
+  shaft-width: 3px;
+  caption: "{refactoringType}";
+  font-size: 10px;
+}
+
+/* ========================================
+ * 默认样式（回退）
+ * ======================================== */
+
+node {
+  diameter: 50px;
+  color: #BDC3C7;
+  border-color: #95A5A6;
+  border-width: 2px;
+  text-color-internal: #2C3E50;
+  caption: "{name}";
+  font-size: 10px;
+}
+
+relationship {
+  color: #95A5A6;
+  shaft-width: 1px;
+  caption: "{edgeType}";
+  font-size: 8px;
+  text-color-external: #7F8C8D;
+  text-color-internal: #FFFFFF;
+}

@@ -1,0 +1,19 @@
+# 使用 Jupyter 基础镜像
+FROM jupyter/scipy-notebook:latest
+
+# 安装 Java 和 Maven
+USER root
+RUN apt-get update && \
+    apt-get install -y openjdk-17-jdk maven && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# 设置工作目录
+WORKDIR /home/jovyan/work
+
+# 复制分析脚本
+COPY scripts /home/jovyan/scripts
+RUN chown -R jovyan:users /home/jovyan/scripts
+
+# 切换回非特权用户
+USER jovyan

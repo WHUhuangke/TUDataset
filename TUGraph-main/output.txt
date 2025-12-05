@@ -1,0 +1,1328 @@
+/Users/mac/Desktop/env/jdk-17.0.10.jdk/Contents/Home/bin/java -Dmaven.multiModuleProjectDirectory=/Users/mac/Desktop/TUGraph -Djansi.passthrough=true -Dmaven.home=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3 -Dclassworlds.conf=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf -Dmaven.ext.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven-event-listener.jar -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64652:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.7.0.jar org.codehaus.classworlds.Launcher -Didea.version=2023.3.4 -Dexec.workingdir=/Users/mac/Desktop/TUGraph -Dexec.args=-classpath %classpath com.github.Main -Dexec.executable=/Users/mac/Desktop/env/jdk-17.0.10.jdk/Contents/Home/bin/java exec:exec
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.github:TUGraph >-------------------------
+[INFO] Building TUGraph 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:exec (default-cli) @ TUGraph ---
+[INFO]  已从配置文件加载配置: /Users/mac/Desktop/TUGraph/config.properties
+[INFO]  ========================================
+[INFO]  TUGraph 知识图谱构建系统
+[INFO]  模式: Multi Version Evolution Analysis
+[INFO]  ========================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  多版本演化流程
+[INFO]  仓库路径: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  目标提交: e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  回溯深度: 10
+[INFO]  时间线策略: Refactoring-Driven
+[INFO]  ========================================
+[INFO]  ========================================
+[INFO]  构建重构驱动的时间线
+[INFO]  目标Commit: e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  最大深度: 100, 时间窗口: 180天
+[INFO]  ========================================
+[INFO]  分析目标commit的变更...
+[INFO]  开始检测重构操作...
+[INFO]    源提交: b25b2509c839f490546586d70f360448bb17e449
+[INFO]    目标提交: e24e3afd879d850abd96ff4e209c79902bb392be
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[INFO]  在提交 b25b2509c839f490546586d70f360448bb17e449 中检测到 7 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e24e3afd879d850abd96ff4e209c79902bb392be ...
+[INFO]  在提交 e24e3afd879d850abd96ff4e209c79902bb392be 中检测到 21 个重构
+[INFO]  ✓ 重构检测完成，共检测到 28 个重构
+[INFO]  ✓ 识别到 17 个变更的方法
+[INFO]  
+[INFO]  开始向前回溯...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Analyzed commons-csv [Commits: 2, Errors: 0, Refactorings: 28]
+[INFO]  检测单个提交中的重构: b25b2509c839f490546586d70f360448bb17e449
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[INFO]  检测到 7 个重构
+[INFO]  ✓ b25b250 相关 (5 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: a557344f3d2f5b9c2f58a8859533914772a2dbf1
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 30f0e1d6cafb2f6bec24b82493d850e5ae787173 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c62d12a8ec5f987c3107674c03c8577fbbb70033 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 30f0e1d6cafb2f6bec24b82493d850e5ae787173 ...
+[INFO]  检测到 15 个重构
+[INFO]  ✓ 30f0e1d 相关 (2 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: c62d12a8ec5f987c3107674c03c8577fbbb70033
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 8512213bb8b55ffdd7ba20fae03c812f95498f73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c62d12a8ec5f987c3107674c03c8577fbbb70033 ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 8512213bb8b55ffdd7ba20fae03c812f95498f73
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6e683b3ad6b9c9a11c82612c521e132e279dd280
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 77661749e56d7340f95de0480f0cd7d2d5f3bec5
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6f446a96c8efaf498cd856aa2b34ec7120e2bca2
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b13020c488b90d6eeecc44eb35b17bd0d71420e6
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: a75338df2f7954d45cbc21dedb85cc9af9462834
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 29ccda75941536482642b1b9cb18cc255ee68b68
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 4aa7aa7784a771dbe18065f28281db4e3ca0e206
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: cafbed240d2c8861f56443e8cf22fcc7fca3f06f
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1f54e39aae118598d83cc1f9dbcff4324e66e589
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 0fe30e4683a8382e946317c9599509f864513d94
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8f47ad87d2a0e4ab0169cd15a8d2bd2c4bf5c0f8
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 989876ffe2f409e29f8a96d6ee36a87769614780
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 29aac84fc6c53981a42c5391bf141c45b2bee25a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: c5ab03743776f891015796756f2a19ec32923e56
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 222fb8dd3ceed68551e5059fccab58a058dcbb9a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 15ed625b1e3858dc3c79ce558e780035c297c5cc
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1ae2550b59df86dc737de182e218e2bcdc10d861
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: f79416861ab0d4084b338219944bf8d2ff728682
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ae027280f9f8743d047d8a8e2fa63c2b9f3880b7
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: e451e16ec7c686cb770f09e96f2c70e7c04a47c4
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 1ae2550b59df86dc737de182e218e2bcdc10d861 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 15ed625b1e3858dc3c79ce558e780035c297c5cc ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 61f4c4cdcc12e1ca0885fe7d6bd37c877601227b
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 156dddff2221e3459583a4b0bfb84c7e7fb1c187
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8bf4049034e7ae74f12af810e138ab271b9bdcbb
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3c3057db025b900dfb84797f66a2713e3d607e94
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 669023ac454642c34181d82b678539f2a020b3a0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 3c3057db025b900dfb84797f66a2713e3d607e94 ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 669023ac454642c34181d82b678539f2a020b3a0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 2bf6e53e95cc6094f584fe748847fd847b3eafd2
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 31e8cd01cb0e6c4895fef7993444ef52c947dfb9
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: fb383cf64fb0d408a557b4d7b3fa27a150392c9e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: bc62fc0fb694d423e9e8af951ecd09e1f62e4b39
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 2bf6e53e95cc6094f584fe748847fd847b3eafd2 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 669023ac454642c34181d82b678539f2a020b3a0 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3dae014716030c7b550aebbb0f77ad7b1c637e3c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 49c5b2c8d3bfb0e0cd011a82c8fd3079e7b1fe19
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 681cca23144dc4fc56d083c3fd81b24aedb67726
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: de2b73549690c038832719b0331a64de291716fa
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 681cca23144dc4fc56d083c3fd81b24aedb67726 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 49c5b2c8d3bfb0e0cd011a82c8fd3079e7b1fe19 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv de2b73549690c038832719b0331a64de291716fa ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 681cca23144dc4fc56d083c3fd81b24aedb67726 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ef7652b4f2859c5acfb9d639c7d1a076dd6e68e9 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv de2b73549690c038832719b0331a64de291716fa ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ef7652b4f2859c5acfb9d639c7d1a076dd6e68e9
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 1ad1538aa7918ba356545355f62c9bb6ae85c792
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 88efa3258f30b2cb94fd12eb2d7318e86e350cb7 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 1ad1538aa7918ba356545355f62c9bb6ae85c792 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 88efa3258f30b2cb94fd12eb2d7318e86e350cb7
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv f7dfe3e72f085583e545f726ef8e1817a3d99c70 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 88efa3258f30b2cb94fd12eb2d7318e86e350cb7 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: f7dfe3e72f085583e545f726ef8e1817a3d99c70
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6bf6ccb66443a50ccbd3db281b95a899b3f0d8cc
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 92e486ac7c671dcaa61f6a8d4bf394f66fb2ef23
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 35771c10e626e6b476ca975776df81f503eb0415
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5f40584b2ce720d1eb6170d3839c413ed8d8564a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 12738c27e2eba2b57ca90e235a2ef1fb3f09c2bf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5f5e0f2c04623f8bb391becf18b9ea9779bde272
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 392cf843095b6ce3fcdb6cfd197fcd28d627184a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 17d031a984975b15d6fa65824bfb698406caf8cd
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 732c2f8b1ce031384e63e0594cc16a2945528891
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 02b398d33f9c4f0b94f8554586d68394315f9cd5
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 947c514bd2183e438d9334aac8b8b506bac6ec11
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 4579bd3be81495965c11c756ae1480b42998c6fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: a0ff618877365a6694e8a1e0ede80d0b85df7894
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: f69526c8f10d8aae6cd094f45ac67132e5d3b6ed
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 81f90443d84112637f967226ebfda99983b65011
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6afa33cde8039a1233568a1ede5ff0de2cf07e41
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 114118c00f8e4e918d639c72ada6c213c7ee3d2d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 6afa33cde8039a1233568a1ede5ff0de2cf07e41 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 114118c00f8e4e918d639c72ada6c213c7ee3d2d
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 085294dd853151bba80f826f1c1d6cec0be92865
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 9e1f26ca038798fdaecd67cbc9dd4585e6d6c88b
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 43649ac7e3be12a53f09c8e35f297d50e415c5fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: d1b1f9c09472daf1141aa8a8a89c6d8b82e7960e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ec8f32079db108d62f4708f2d8533a942fae2698
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 9e1f26ca038798fdaecd67cbc9dd4585e6d6c88b ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 085294dd853151bba80f826f1c1d6cec0be92865 ...
+[INFO]  检测单个提交中的重构: 56151b05cd44622c7b52c4d952be7c06a644540e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 2e4d5a22c2c82dd771068e725c3bf236c60a3c98
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5c53b34bcf13189d719ed51451fd349117bce736
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ce844263af489ee87ad0c76cd1fa15d0c83d5ebf ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5c53b34bcf13189d719ed51451fd349117bce736 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ce844263af489ee87ad0c76cd1fa15d0c83d5ebf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 6711054af0ea9f6330bdec25687f0a1f9b9212aa
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 055695d3827db8ffe4d5a826f73b23d2035e00f0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 6711054af0ea9f6330bdec25687f0a1f9b9212aa ...
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 055695d3827db8ffe4d5a826f73b23d2035e00f0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b663258fb2716e36b4da8497a28b460515545e0c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: c08ed6caeba4b3493fb7d051a067e656ca455460
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 86eda8a691d59e511dc6c8cb838478f62cdafe4f
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c08ed6caeba4b3493fb7d051a067e656ca455460 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b663258fb2716e36b4da8497a28b460515545e0c ...
+[INFO]  检测单个提交中的重构: cfe873e838cfa8d1b4d309c38197efafd9df8c3a
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: c2dd9bc0314a9b5f4e6abaa4769a86b4d1324fd8
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 7f64d84b8ab864ec9a0d30632bc0928292c82599
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: b63a788e2d88b873b5a3a9236640b7016bcd7514
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b63a788e2d88b873b5a3a9236640b7016bcd7514 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 7f64d84b8ab864ec9a0d30632bc0928292c82599 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e100d623682c411e242bea8fe0b3176fbd0ddcc0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b63a788e2d88b873b5a3a9236640b7016bcd7514 ...
+[INFO]  检测到 3 个重构
+[INFO]  检测单个提交中的重构: e100d623682c411e242bea8fe0b3176fbd0ddcc0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 8a827b22345c954e836f9c3ca1d7cb8b24f73ffb
+[INFO]  检测到 0 个重构
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 8a827b22345c954e836f9c3ca1d7cb8b24f73ffb ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e100d623682c411e242bea8fe0b3176fbd0ddcc0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 502a329653dc1c9bf9f7f2fe0928bcc65df7ea72 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b98f7fe8197b2e4d46bfad160fc62603edb03a8c ...
+[INFO]  检测单个提交中的重构: b98f7fe8197b2e4d46bfad160fc62603edb03a8c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 502a329653dc1c9bf9f7f2fe0928bcc65df7ea72
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: ca2e6e7527d9b04e54f10f949d3c2180203e5660
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 0b0003e3b3cdad863092390b4d4ed5dbf78779a5 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv ca2e6e7527d9b04e54f10f949d3c2180203e5660 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 0b0003e3b3cdad863092390b4d4ed5dbf78779a5
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c75601d2a3426adf1671572766cc65906812fa73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 0b0003e3b3cdad863092390b4d4ed5dbf78779a5 ...
+[INFO]  检测到 5 个重构
+[INFO]  检测单个提交中的重构: c75601d2a3426adf1671572766cc65906812fa73
+[INFO]  检测到 4 个重构
+[INFO]  检测单个提交中的重构: 76981db68af50e0475a2d5d0fcc6bdf87efb18f1
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 76981db68af50e0475a2d5d0fcc6bdf87efb18f1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c75601d2a3426adf1671572766cc65906812fa73 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5e5512fd068213d099920b00971ca3fe1185511c ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 76981db68af50e0475a2d5d0fcc6bdf87efb18f1 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 5e5512fd068213d099920b00971ca3fe1185511c
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: e7a5708a1d8ab216ef9e80b151e7a6683885e10d
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e7a5708a1d8ab216ef9e80b151e7a6683885e10d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 5e5512fd068213d099920b00971ca3fe1185511c ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv bf987d5dd60464616078302d80ae43aa9adc0f8d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e7a5708a1d8ab216ef9e80b151e7a6683885e10d ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv eddb33206b6d5fc9feb0dc0e751d968268d4d0f0 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv bf987d5dd60464616078302d80ae43aa9adc0f8d ...
+[INFO]  检测到 2 个重构
+[INFO]  检测单个提交中的重构: bf987d5dd60464616078302d80ae43aa9adc0f8d
+[INFO]  检测到 1 个重构
+[INFO]  检测单个提交中的重构: eddb33206b6d5fc9feb0dc0e751d968268d4d0f0
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: b40039bb8bade1c1d71bce6ecc46479e53eeb76c
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv dd7b4b3e7753d177e18c4c0ef90fa89a1f66b673 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b40039bb8bade1c1d71bce6ecc46479e53eeb76c ...
+[INFO]  检测到 2 个重构
+[INFO]  检测单个提交中的重构: dd7b4b3e7753d177e18c4c0ef90fa89a1f66b673
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: af2c3f8b71a63163e2e7ef8b0fe13bcddf162066
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 73ce1f45c081efa7cdbdff15e0cf6c90843c36fa ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv af2c3f8b71a63163e2e7ef8b0fe13bcddf162066 ...
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 73ce1f45c081efa7cdbdff15e0cf6c90843c36fa
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: bb59de296a53a7af21223420ddf2ea32eaec3db4
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 3065d096a714f8b0b475547a75303e6a3bdb861e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: da21c6ce54f093e48481d680647098944158a7cf
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 527cbc4e2eb4c5f72ae84bb1ac1f8d953b320736
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 77502971db8dfba9e041bb01671ae35e6f121576
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 403d77f3c2e1e91d77b154214d2bcba2cc57d97e ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 77502971db8dfba9e041bb01671ae35e6f121576 ...
+[INFO]  检测到 363 个重构
+[INFO]  ✓ 7750297 相关 (3 重构, 17→17 方法)
+[INFO]  检测单个提交中的重构: 403d77f3c2e1e91d77b154214d2bcba2cc57d97e
+[INFO]  检测到 0 个重构
+[INFO]  检测单个提交中的重构: 70f193d6e5797bd8d56ca42bd216d645b8bea03f
+[INFO]  检测到 0 个重构
+[INFO]  
+[INFO]  回溯完成:
+[INFO]    总共分析: 100 个commits
+[INFO]    找到相关: 3 个commits
+[INFO]    过滤比例: 97.0%
+[INFO]  ✓ 时间线构建完成: 4 个commits
+[INFO]    耗时: 6.57 秒
+[INFO]  ========================================
+[INFO]  
+[INFO]  时间线构建完成:
+[INFO]    V-3 (7750297) Better Checkstyle
+[INFO]    V-2 (30f0e1d) CSVPrinter.printRecords(ResultSet) knows how to use CSVFormat's maxRows
+[INFO]    V-1 (b25b250) CSVPrinter.printRecords(Iterable) knows how to use CSVFormat's maxRows
+[INFO]    V0 (e24e3af) CSVPrinter.printRecords(Stream) knows how to use CSVFormat's maxRows
+[INFO]  
+[INFO]  ----------------------------------------
+[INFO]  分析提交对: V-1 (b25b250) CSVPrinter.printRecords(Iterable) knows how to use CSVFormat's maxRows -> V0 (e24e3af) CSVPrinter.printRecords(Stream) knows how to use CSVFormat's maxRows
+[INFO]  ----------------------------------------
+[INFO]  使用显式指定的提交对: V1=b25b2509c839f490546586d70f360448bb17e449, V2=e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  初始化演化分析组件...
+[INFO]  初始化节点匹配策略，匹配器数量: 2
+[INFO]  组件初始化完成
+[INFO]  ========================================
+[INFO]  开始版本演化分析
+[INFO]  Base Version: V-1 [b25b250]
+[INFO]  Target Version: V0 [e24e3af]
+[INFO]  ========================================
+[INFO]  Git 仓库已打开: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  ========================================
+[INFO]  分析提交: V-1 [b25b250]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 b25b2509c839f490546586d70f360448bb17e449
+[INFO]  开始解析提交 b25b250 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [██████████████████  ] 93% (43/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 877
+Fields: 186
+Total: 1173
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 693ms
+[INFO]  Phase completed: Extracting Nodes - 694ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 971 declares relations
+Extracting method relations...
+Created 1064 calls, 1265 reads, 114 writes, 2608 tests
+Created 51 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1064 → 786 (减少 278)
+[INFO]    - READS: 1265 → 942 (减少 323)
+[INFO]    - WRITES: 114 → 92 (减少 22)
+[INFO]    - TESTS: 2608 → 1762 (减少 846)
+[INFO]    - 总计: 5051 → 3582 (减少 29.1%)
+Edge merging completed: 5051 → 3582 edges (29.1% reduction)
+
+=== Edge Statistics ===
+TESTS: 1762
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 51
+DECLARES: 971
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 786
+READS: 942
+WRITES: 92
+Total Edges: 4815
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 52
+Total Edges: 0
+Total Duration: 3.0s
+Peak Memory: 303.6MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 b25b250 解析完成
+[INFO]    节点数: 1173
+[INFO]    边数: 4815
+[INFO]  ========================================
+[INFO]  分析提交: V0 [e24e3af]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: e24e3afd879d850abd96ff4e209c79902bb392be (e24e3afd879d850abd96ff4e209c79902bb392be)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  开始解析提交 e24e3af 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [████████████████████] 100% (46/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 878
+Fields: 186
+Total: 1174
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 489ms
+[INFO]  Phase completed: Extracting Nodes - 489ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 972 declares relations
+Extracting method relations...
+Created 1066 calls, 1265 reads, 114 writes, 2611 tests
+Created 51 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1066 → 788 (减少 278)
+[INFO]    - READS: 1265 → 942 (减少 323)
+[INFO]    - WRITES: 114 → 92 (减少 22)
+[INFO]    - TESTS: 2611 → 1765 (减少 846)
+[INFO]    - 总计: 5056 → 3587 (减少 29.1%)
+Edge merging completed: 5056 → 3587 edges (29.1% reduction)
+
+=== Edge Statistics ===
+TESTS: 1765
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 51
+DECLARES: 972
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 788
+READS: 942
+WRITES: 92
+Total Edges: 4821
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 104
+Total Edges: 0
+Total Duration: 2.0s
+Peak Memory: 304.7MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 e24e3af 解析完成
+[INFO]    节点数: 1174
+[INFO]    边数: 4821
+[INFO]  ========================================
+[INFO]  检测重构操作: b25b2509c839f490546586d70f360448bb17e449 → e24e3afd879d850abd96ff4e209c79902bb392be
+[INFO]  ========================================
+[INFO]  检测单个提交中的重构: e24e3afd879d850abd96ff4e209c79902bb392be
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv e24e3afd879d850abd96ff4e209c79902bb392be ...
+[INFO]  检测到 21 个重构
+[INFO]  ✓ 检测到 21 个重构操作
+[INFO]    [1] EXTRACT_VARIABLE: Extract Variable	expected : String in method public testExcelPrintAllStreamOfArrays(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [2] EXTRACT_VARIABLE: Extract Variable	format : CSVFormat in method public testExcelPrintAllStreamOfArrays(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [3] ADD_PARAMETER: Add Parameter	maxRows : long in method public testExcelPrintAllStreamOfArrays(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [4] ADD_METHOD_ANNOTATION: Add Method Annotation	@ParameterizedTest in method public testExcelPrintAllStreamOfArrays(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [5] ADD_METHOD_ANNOTATION: Add Method Annotation	@ValueSource(longs = {-1,0,1,2,Integer.MAX_VALUE}) in method public testExcelPrintAllStreamOfArrays(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [6] REMOVE_METHOD_ANNOTATION: Remove Method Annotation	@Test in method public testExcelPrintAllStreamOfArrays() : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [7] CHANGE_PARAMETER_TYPE: Change Parameter Type	maxRows : int to maxRows : long in method public testJdbcPrinterWithResultSet(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [8] MODIFY_METHOD_ANNOTATION: Modify Method Annotation	@ValueSource(ints = {-1,0,1,2,3,4,Integer.MAX_VALUE}) to @ValueSource(longs = {-1,0,1,2,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSet(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [9] CHANGE_PARAMETER_TYPE: Change Parameter Type	maxRows : int to maxRows : long in method public testJdbcPrinterWithResultSetHeader(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [10] MODIFY_METHOD_ANNOTATION: Modify Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) to @ValueSource(longs = {-1,0,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSetHeader(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [11] CHANGE_PARAMETER_TYPE: Change Parameter Type	maxRows : int to maxRows : long in method public testJdbcPrinterWithResultSetMetaData(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [12] MODIFY_METHOD_ANNOTATION: Modify Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) to @ValueSource(longs = {-1,0,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSetMetaData(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [13] CHANGE_PARAMETER_TYPE: Change Parameter Type	maxRows : int to maxRows : long in method public testPrintCSVRecords(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [14] MODIFY_METHOD_ANNOTATION: Modify Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) to @ValueSource(longs = {-1,0,3,4,Integer.MAX_VALUE}) in method public testPrintCSVRecords(maxRows long) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [15] EXTRACT_OPERATION: Extract Method	private printRecords(stream IOStream<?>) : void extracted from public printRecords(values Iterable<?>) : void in class org.apache.commons.csv.CSVPrinter
+[INFO]    [16] EXTRACT_OPERATION: Extract Method	private printRecords(stream IOStream<?>) : void extracted from public printRecords(values Stream<?>) : void in class org.apache.commons.csv.CSVPrinter
+[INFO]    [17] MERGE_CONDITIONAL: Merge Conditional	[stream=stream.limit(format.getMaxRows());, if(format.getMaxRows() > 0)] to (format.getMaxRows() > 0 ? stream.limit(format.getMaxRows()) : stream).forEachOrdered(this::printRecordObject); in method private printRecords(stream IOStream<?>) : void from class org.apache.commons.csv.CSVPrinter
+[INFO]    [18] PARAMETERIZE_VARIABLE: Parameterize Variable	stream : IOStream<?> to stream : IOStream<?> in method private printRecords(stream IOStream<?>) : void from class org.apache.commons.csv.CSVPrinter
+[INFO]    [19] ADD_PARAMETER_MODIFIER: Add Parameter Modifier	final in parameter stream : IOStream<?> in method private printRecords(stream IOStream<?>) : void from class org.apache.commons.csv.CSVPrinter
+[INFO]    [20] CHANGE_VARIABLE_TYPE: Change Variable Type	expectedLength : int to expectedLength : long in method public compare(message String, expected String[][], actual List<CSVRecord>, maxRows long) : void from class org.apache.commons.csv.Utils
+[INFO]    ... 还有 1 个重构
+[INFO]  ========================================
+[INFO]  匹配节点: b25b250 → e24e3af
+[INFO]  ========================================
+[INFO]  ========================================
+[INFO]  开始节点匹配
+[INFO]  ========================================
+[INFO]  V1 图谱节点数: 1173
+[INFO]  V2 图谱节点数: 1174
+[INFO]  
+[INFO]  
+[INFO]  ========================================
+[INFO]  节点匹配完成
+[INFO]  ========================================
+[INFO]  总映射数: 1167
+[INFO]  映射率: 99.5%
+[INFO]  
+[INFO]  各匹配器结果:
+[INFO]    - ExactMatcher: 1167 个映射
+[INFO]    - StructuralMatcher: 0 个映射
+[INFO]  
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1167
+  Exact matches (1.0): 1162
+  High confidence (>= 0.8): 1167
+  Low confidence (< 0.8): 0
+[INFO]  
+[INFO]  ✓ 节点匹配完成
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1167
+  Exact matches (1.0): 1162
+  High confidence (>= 0.8): 1167
+  Low confidence (< 0.8): 0
+[INFO]  ========================================
+[INFO]  合并图谱
+[INFO]  ========================================
+[INFO]  Git diff 检测到 17 个节点需要补充演化
+[INFO]  开始合并图谱...
+[INFO]  V1 图: 1173 节点, 4815 边
+[INFO]  V2 图: 1174 节点, 4821 边
+[INFO]  映射关系: 1167 对
+[INFO]  处理映射节点...
+[INFO]  映射节点处理完成: UNCHANGED=1161, MODIFIED=6
+[INFO]  处理删除节点...
+[INFO]  删除节点处理完成: 6 个
+[INFO]  处理新增节点...
+[INFO]  新增节点处理完成: 7 个
+[INFO]  创建演化边...
+[INFO]  演化边创建完成: 62 条
+[INFO]  合并结构边...
+[INFO]  结构边合并完成: 5085 条（已去重）
+[INFO]  ========== 图合并统计 ==========
+[INFO]  节点统计:
+[INFO]    UNCHANGED: 1161
+[INFO]    MODIFIED:  12
+[INFO]    ADDED:     7
+[INFO]    DELETED:   6
+[INFO]    总计:      1186
+[INFO]  
+[INFO]  处理统计:
+[INFO]    processUnchangedNode() 调用: 1161 次
+[INFO]    processModifiedNode() 调用:  6 次
+[INFO]    processAddedNode() 调用:     7 次
+[INFO]    processDeletedNode() 调用:   6 次
+[INFO]  边统计:
+[INFO]    结构边:    5085
+[INFO]    演化边:    62
+[INFO]    总计:      5106
+[INFO]  ================================
+[INFO]  ✓ 图谱合并完成
+[INFO]  演化分析完成，恢复 Git 状态...
+[INFO]  恢复到原始状态: b25b2509c839f490546586d70f360448bb17e449
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  Git 仓库已关闭
+[INFO]  ========================================
+[INFO]  ✓ 演化分析成功完成
+[INFO]  ========================================
+[INFO]  ✓ 提交对 V-1 -> V0 分析完成
+[INFO]  ----------------------------------------
+[INFO]  分析提交对: V-2 (30f0e1d) CSVPrinter.printRecords(ResultSet) knows how to use CSVFormat's maxRows -> V-1 (b25b250) CSVPrinter.printRecords(Iterable) knows how to use CSVFormat's maxRows
+[INFO]  ----------------------------------------
+[INFO]  使用显式指定的提交对: V1=30f0e1d6cafb2f6bec24b82493d850e5ae787173, V2=b25b2509c839f490546586d70f360448bb17e449
+[INFO]  初始化演化分析组件...
+[INFO]  初始化节点匹配策略，匹配器数量: 2
+[INFO]  组件初始化完成
+[INFO]  ========================================
+[INFO]  开始版本演化分析
+[INFO]  Base Version: V-2 [30f0e1d]
+[INFO]  Target Version: V-1 [b25b250]
+[INFO]  ========================================
+[INFO]  Git 仓库已打开: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  ========================================
+[INFO]  分析提交: V-2 [30f0e1d]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: 30f0e1d6cafb2f6bec24b82493d850e5ae787173 (30f0e1d6cafb2f6bec24b82493d850e5ae787173)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[INFO]  开始解析提交 30f0e1d 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [█████████           ] 45% (21/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 877
+Fields: 186
+Total: 1173
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 439ms
+[INFO]  Phase completed: Extracting Nodes - 439ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 971 declares relations
+Extracting method relations...
+Created 1062 calls, 1263 reads, 114 writes, 2605 tests
+Created 51 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1062 → 785 (减少 277)
+[INFO]    - READS: 1263 → 941 (减少 322)
+[INFO]    - WRITES: 114 → 92 (减少 22)
+[INFO]    - TESTS: 2605 → 1759 (减少 846)
+[INFO]    - 总计: 5044 → 3577 (减少 29.1%)
+Edge merging completed: 5044 → 3577 edges (29.1% reduction)
+
+=== Edge Statistics ===
+TESTS: 1759
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 51
+DECLARES: 971
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 785
+READS: 941
+WRITES: 92
+Total Edges: 4810
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 156
+Total Edges: 0
+Total Duration: 1.8s
+Peak Memory: 304.7MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 30f0e1d 解析完成
+[INFO]    节点数: 1173
+[INFO]    边数: 4810
+[INFO]  ========================================
+[INFO]  分析提交: V-1 [b25b250]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 b25b2509c839f490546586d70f360448bb17e449
+[INFO]  开始解析提交 b25b250 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [█████████           ] 47% (22/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 877
+Fields: 186
+Total: 1173
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 412ms
+[INFO]  Phase completed: Extracting Nodes - 412ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 971 declares relations
+Extracting method relations...
+Created 1064 calls, 1265 reads, 114 writes, 2608 tests
+Created 51 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1064 → 786 (减少 278)
+[INFO]    - READS: 1265 → 942 (减少 323)
+[INFO]    - WRITES: 114 → 92 (减少 22)
+[INFO]    - TESTS: 2608 → 1762 (减少 846)
+[INFO]    - 总计: 5051 → 3582 (减少 29.1%)
+Edge merging completed: 5051 → 3582 edges (29.1% reduction)
+
+=== Edge Statistics ===
+TESTS: 1762
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 51
+DECLARES: 971
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 786
+READS: 942
+WRITES: 92
+Total Edges: 4815
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 208
+Total Edges: 0
+Total Duration: 1.8s
+Peak Memory: 407.7MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 b25b250 解析完成
+[INFO]    节点数: 1173
+[INFO]    边数: 4815
+[INFO]  ========================================
+[INFO]  检测重构操作: 30f0e1d6cafb2f6bec24b82493d850e5ae787173 → b25b2509c839f490546586d70f360448bb17e449
+[INFO]  ========================================
+[INFO]  检测单个提交中的重构: b25b2509c839f490546586d70f360448bb17e449
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv a557344f3d2f5b9c2f58a8859533914772a2dbf1 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv b25b2509c839f490546586d70f360448bb17e449 ...
+[INFO]  检测到 7 个重构
+[INFO]  ✓ 检测到 7 个重构操作
+[INFO]    [1] RENAME_VARIABLE: Rename Variable	res : String[][] to expected : String[][] in method public testPrintCSVRecords(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [2] ADD_PARAMETER: Add Parameter	maxRows : int in method public testPrintCSVRecords(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [3] ADD_METHOD_ANNOTATION: Add Method Annotation	@ParameterizedTest in method public testPrintCSVRecords(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [4] ADD_METHOD_ANNOTATION: Add Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) in method public testPrintCSVRecords(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [5] REMOVE_METHOD_ANNOTATION: Remove Method Annotation	@Test in method public testPrintCSVRecords() : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [6] EXTRACT_VARIABLE: Extract Variable	stream : IOStream<?> in method public printRecords(values Iterable<?>) : void from class org.apache.commons.csv.CSVPrinter
+[INFO]    [7] ADD_PARAMETER: Add Parameter	maxRows : int in method public compare(message String, expected String[][], actual List<CSVRecord>, maxRows int) : void from class org.apache.commons.csv.Utils
+[INFO]  ========================================
+[INFO]  匹配节点: 30f0e1d → b25b250
+[INFO]  ========================================
+[INFO]  ========================================
+[INFO]  开始节点匹配
+[INFO]  ========================================
+[INFO]  V1 图谱节点数: 1173
+[INFO]  V2 图谱节点数: 1173
+[INFO]  
+[INFO]  
+[INFO]  ========================================
+[INFO]  节点匹配完成
+[INFO]  ========================================
+[INFO]  总映射数: 1171
+[INFO]  映射率: 99.8%
+[INFO]  
+[INFO]  各匹配器结果:
+[INFO]    - ExactMatcher: 1171 个映射
+[INFO]    - StructuralMatcher: 0 个映射
+[INFO]  
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1171
+  Exact matches (1.0): 1157
+  High confidence (>= 0.8): 1171
+  Low confidence (< 0.8): 0
+[INFO]  
+[INFO]  ✓ 节点匹配完成
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1171
+  Exact matches (1.0): 1157
+  High confidence (>= 0.8): 1171
+  Low confidence (< 0.8): 0
+[INFO]  ========================================
+[INFO]  合并图谱
+[INFO]  ========================================
+[INFO]  Git diff 检测到 24 个节点需要补充演化
+[INFO]  开始合并图谱...
+[INFO]  V1 图: 1173 节点, 4810 边
+[INFO]  V2 图: 1173 节点, 4815 边
+[INFO]  映射关系: 1171 对
+[INFO]  处理映射节点...
+[INFO]  映射节点处理完成: UNCHANGED=1152, MODIFIED=19
+[INFO]  处理删除节点...
+[INFO]  删除节点处理完成: 2 个
+[INFO]  处理新增节点...
+[INFO]  新增节点处理完成: 2 个
+[INFO]  创建演化边...
+[INFO]  演化边创建完成: 22 条
+[INFO]  合并结构边...
+[INFO]  结构边合并完成: 5499 条（已去重）
+[INFO]  ========== 图合并统计 ==========
+[INFO]  节点统计:
+[INFO]    UNCHANGED: 1158
+[INFO]    MODIFIED:  38
+[INFO]    ADDED:     2
+[INFO]    DELETED:   2
+[INFO]    总计:      1200
+[INFO]  
+[INFO]  处理统计:
+[INFO]    processUnchangedNode() 调用: 1152 次
+[INFO]    processModifiedNode() 调用:  19 次
+[INFO]    processAddedNode() 调用:     2 次
+[INFO]    processDeletedNode() 调用:   2 次
+[INFO]  边统计:
+[INFO]    结构边:    5499
+[INFO]    演化边:    41
+[INFO]    总计:      5525
+[INFO]  ================================
+[INFO]  ✓ 图谱合并完成
+[INFO]  演化分析完成，恢复 Git 状态...
+[INFO]  恢复到原始状态: b25b2509c839f490546586d70f360448bb17e449
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  Git 仓库已关闭
+[INFO]  ========================================
+[INFO]  ✓ 演化分析成功完成
+[INFO]  ========================================
+[INFO]  ✓ 提交对 V-2 -> V-1 分析完成
+[INFO]  ----------------------------------------
+[INFO]  分析提交对: V-3 (7750297) Better Checkstyle -> V-2 (30f0e1d) CSVPrinter.printRecords(ResultSet) knows how to use CSVFormat's maxRows
+[INFO]  ----------------------------------------
+[INFO]  使用显式指定的提交对: V1=77502971db8dfba9e041bb01671ae35e6f121576, V2=30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[INFO]  初始化演化分析组件...
+[INFO]  初始化节点匹配策略，匹配器数量: 2
+[INFO]  组件初始化完成
+[INFO]  ========================================
+[INFO]  开始版本演化分析
+[INFO]  Base Version: V-3 [7750297]
+[INFO]  Target Version: V-2 [30f0e1d]
+[INFO]  ========================================
+[INFO]  Git 仓库已打开: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  ========================================
+[INFO]  分析提交: V-3 [7750297]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: 77502971db8dfba9e041bb01671ae35e6f121576 (77502971db8dfba9e041bb01671ae35e6f121576)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 77502971db8dfba9e041bb01671ae35e6f121576
+[INFO]  开始解析提交 7750297 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [█████████           ] 45% (21/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 873
+Fields: 178
+Total: 1161
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 405ms
+[INFO]  Phase completed: Extracting Nodes - 405ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 955 declares relations
+Extracting method relations...
+Created 1180 calls, 1262 reads, 133 writes, 2633 tests
+Created 49 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1180 → 799 (减少 381)
+[INFO]    - READS: 1262 → 930 (减少 332)
+[INFO]    - WRITES: 133 → 111 (减少 22)
+[INFO]    - TESTS: 2633 → 1720 (减少 913)
+[INFO]    - 总计: 5208 → 3560 (减少 31.6%)
+Edge merging completed: 5208 → 3560 edges (31.6% reduction)
+
+=== Edge Statistics ===
+TESTS: 1720
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 49
+DECLARES: 955
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 799
+READS: 930
+WRITES: 111
+Total Edges: 4775
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 260
+Total Edges: 0
+Total Duration: 1.9s
+Peak Memory: 407.7MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 7750297 解析完成
+[INFO]    节点数: 1161
+[INFO]    边数: 4775
+[INFO]  ========================================
+[INFO]  分析提交: V-2 [30f0e1d]
+[INFO]  ========================================
+[INFO]  切换到目标提交...
+[INFO]  检出提交: 30f0e1d6cafb2f6bec24b82493d850e5ae787173 (30f0e1d6cafb2f6bec24b82493d850e5ae787173)
+[INFO]  ✓ 检出成功
+[INFO]  ✓ 成功切换到 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[INFO]  开始解析提交 30f0e1d 的代码...
+==================================================
+            Starting Project Analysis
+==================================================
+[INFO]  Project Path: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Log File: /Users/mac/Desktop/TUGraph/./logs/application.log
+==================================================
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Initializing Spoon
+[INFO]  ========================================
+[INFO]  Creating MavenLauncher for project: /Users/mac/Desktop/java-project/tu/backup/commons-csv
+[INFO]  Found 3 exclude pattern(s) from pom.xml:
+[INFO]    - **/*Benchmark*
+[INFO]    - src/test/resources/**/*.bin
+[INFO]    - **/perf/PerformanceTest.java
+[INFO]  Building Spoon model...
+[main] INFO spoon.MavenLauncher - Running in FULLCLASSPATH mode. Source folders and dependencies are inferred from the pom.xml file (doc: http://spoon.gforge.inria.fr/launcher.html).
+[WARN]  Model building encountered errors, attempting to use partial model...
+[INFO]  ✓ Partial model built successfully: 46 types found
+[INFO]  
+[INFO]  ========================================
+[INFO]  Phase: Extracting Nodes
+[INFO]  ========================================
+  Progress: [                    ] 2% (1/46)[INFO]  Created 5 packages
+[INFO]  Created 46 files
+[INFO]  Extracting code elements (types, methods, fields)...
+  Progress: [█████████           ] 47% (22/46)[INFO]  ✓ Code elements extraction completed
+=== Node Index Statistics ===
+Projects: 1
+Packages: 5
+Files: 46
+Types: 58
+Methods: 877
+Fields: 186
+Total: 1173
+Note: Parameters are now stored as edge properties (UsesParameterEdge)
+Note: Annotations are now stored as node properties
+  Progress: [████████████████████] 100% (46/46) - 394ms
+[INFO]  Phase completed: Extracting Nodes - 394ms
+[INFO]  
+
+=== Phase 2: Extracting Edges ===
+Extracting project relations...
+Created project relations
+Extracting package relations...
+Created 46 package relations
+Extracting file relations...
+Created 46 file relations
+Extracting type relations...
+Created 0 extends, 0 implements, 971 declares relations
+Extracting method relations...
+Created 1062 calls, 1263 reads, 114 writes, 2605 tests
+Created 51 params, 68 returns, 0 throws
+Extracting field relations...
+Field relations completed
+
+Merging redundant edges...
+[INFO]  开始合并重复边关系...
+[INFO]  ✓ 边合并完成:
+[INFO]    - CALLS: 1062 → 785 (减少 277)
+[INFO]    - READS: 1263 → 941 (减少 322)
+[INFO]    - WRITES: 114 → 92 (减少 22)
+[INFO]    - TESTS: 2605 → 1759 (减少 846)
+[INFO]    - 总计: 5044 → 3577 (减少 29.1%)
+Edge merging completed: 5044 → 3577 edges (29.1% reduction)
+
+=== Edge Statistics ===
+TESTS: 1759
+CONTAINS_FILE: 46
+IN_PACKAGE: 46
+USES_PARAMETER: 51
+DECLARES: 971
+RETURN_TYPE: 68
+HAS_PACKAGE: 5
+DECLARES_TYPE: 46
+CALLS: 785
+READS: 941
+WRITES: 92
+Total Edges: 4810
+[INFO]  
+==================================================
+                 Analysis Summary
+==================================================
+Total Nodes: 312
+Total Edges: 0
+Total Duration: 1.8s
+Peak Memory: 550.4MB
+==================================================
+
+[INFO]  Log file saved to: /Users/mac/Desktop/TUGraph/./logs/application.log
+[INFO]  ✓ 提交 30f0e1d 解析完成
+[INFO]    节点数: 1173
+[INFO]    边数: 4810
+[INFO]  ========================================
+[INFO]  检测重构操作: 77502971db8dfba9e041bb01671ae35e6f121576 → 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[INFO]  ========================================
+[INFO]  检测单个提交中的重构: 30f0e1d6cafb2f6bec24b82493d850e5ae787173
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv c62d12a8ec5f987c3107674c03c8577fbbb70033 ...
+[main] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing /Users/mac/Desktop/java-project/tu/backup/commons-csv 30f0e1d6cafb2f6bec24b82493d850e5ae787173 ...
+[INFO]  检测到 15 个重构
+[INFO]  ✓ 检测到 15 个重构操作
+[INFO]    [1] RENAME_ATTRIBUTE: Rename Attribute	recordSeparator : String to RECORD_SEPARATOR : String in class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [2] ADD_ATTRIBUTE_MODIFIER: Add Attribute Modifier	static in attribute private RECORD_SEPARATOR : String from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [3] EXTRACT_VARIABLE: Extract Variable	expectedRowsWithHeader : int in method public testJdbcPrinterWithResultSet(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [4] ADD_PARAMETER: Add Parameter	maxRows : int in method public testJdbcPrinterWithResultSet(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [5] ADD_METHOD_ANNOTATION: Add Method Annotation	@ParameterizedTest in method public testJdbcPrinterWithResultSet(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [6] ADD_METHOD_ANNOTATION: Add Method Annotation	@ValueSource(ints = {-1,0,1,2,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSet(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [7] REMOVE_METHOD_ANNOTATION: Remove Method Annotation	@Test in method public testJdbcPrinterWithResultSet() : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [8] ADD_PARAMETER: Add Parameter	maxRows : int in method public testJdbcPrinterWithResultSetHeader(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [9] ADD_METHOD_ANNOTATION: Add Method Annotation	@ParameterizedTest in method public testJdbcPrinterWithResultSetHeader(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [10] ADD_METHOD_ANNOTATION: Add Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSetHeader(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [11] REMOVE_METHOD_ANNOTATION: Remove Method Annotation	@Test in method public testJdbcPrinterWithResultSetHeader() : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [12] ADD_PARAMETER: Add Parameter	maxRows : int in method public testJdbcPrinterWithResultSetMetaData(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [13] ADD_METHOD_ANNOTATION: Add Method Annotation	@ParameterizedTest in method public testJdbcPrinterWithResultSetMetaData(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [14] ADD_METHOD_ANNOTATION: Add Method Annotation	@ValueSource(ints = {-1,0,3,4,Integer.MAX_VALUE}) in method public testJdbcPrinterWithResultSetMetaData(maxRows int) : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]    [15] REMOVE_METHOD_ANNOTATION: Remove Method Annotation	@Test in method public testJdbcPrinterWithResultSetMetaData() : void from class org.apache.commons.csv.CSVPrinterTest
+[INFO]  ========================================
+[INFO]  匹配节点: 7750297 → 30f0e1d
+[INFO]  ========================================
+[INFO]  ========================================
+[INFO]  开始节点匹配
+[INFO]  ========================================
+[INFO]  V1 图谱节点数: 1161
+[INFO]  V2 图谱节点数: 1173
+[INFO]  
+[INFO]  
+[INFO]  ========================================
+[INFO]  节点匹配完成
+[INFO]  ========================================
+[INFO]  总映射数: 1129
+[INFO]  映射率: 97.2%
+[INFO]  
+[INFO]  各匹配器结果:
+[INFO]    - ExactMatcher: 1129 个映射
+[INFO]    - StructuralMatcher: 0 个映射
+[INFO]  
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1129
+  Exact matches (1.0): 1021
+  High confidence (>= 0.8): 1129
+  Low confidence (< 0.8): 0
+[INFO]  
+[INFO]  ✓ 节点匹配完成
+[INFO]  NodeMapping Statistics:
+  Total mappings: 1129
+  Exact matches (1.0): 1021
+  High confidence (>= 0.8): 1129
+  Low confidence (< 0.8): 0
+[INFO]  ========================================
+[INFO]  合并图谱
+[INFO]  ========================================
+[INFO]  Git diff 检测到 180 个节点需要补充演化
+[INFO]  开始合并图谱...
+[INFO]  V1 图: 1161 节点, 4775 边
+[INFO]  V2 图: 1173 节点, 4810 边
+[INFO]  映射关系: 1129 对
+[INFO]  处理映射节点...
+[INFO]  映射节点处理完成: UNCHANGED=988, MODIFIED=141
+[INFO]  处理删除节点...
+[INFO]  删除节点处理完成: 32 个
+[INFO]  处理新增节点...
+[INFO]  新增节点处理完成: 44 个
+[INFO]  创建演化边...
+[INFO]  演化边创建完成: 44 条
+[INFO]  合并结构边...
+[INFO]  结构边合并完成: 7067 条（已去重）
+[INFO]  ========== 图合并统计 ==========
+[INFO]  节点统计:
+[INFO]    UNCHANGED: 999
+[INFO]    MODIFIED:  284
+[INFO]    ADDED:     44
+[INFO]    DELETED:   32
+[INFO]    总计:      1359
+[INFO]  
+[INFO]  处理统计:
+[INFO]    processUnchangedNode() 调用: 987 次
+[INFO]    processModifiedNode() 调用:  142 次
+[INFO]    processAddedNode() 调用:     44 次
+[INFO]    processDeletedNode() 调用:   32 次
+[INFO]  边统计:
+[INFO]    结构边:    7067
+[INFO]    演化边:    191
+[INFO]    总计:      7183
+[INFO]  ================================
+[INFO]  ✓ 图谱合并完成
+[INFO]  演化分析完成，恢复 Git 状态...
+[INFO]  恢复到原始状态: b25b2509c839f490546586d70f360448bb17e449
+[INFO]  检出提交: b25b2509c839f490546586d70f360448bb17e449 (b25b2509c839f490546586d70f360448bb17e449)
+[INFO]  ✓ 检出成功
+[INFO]  Git 仓库已关闭
+[INFO]  ========================================
+[INFO]  ✓ 演化分析成功完成
+[INFO]  ========================================
+[INFO]  ✓ 提交对 V-3 -> V-2 分析完成
+[INFO]  导出聚合图谱: commons-csv_timeline_V-3_V0
+[INFO]  ========================================
+[INFO]  导出 Neo4j Bulk Import 格式 CSV
+[INFO]  ========================================
+[INFO]  创建导出目录: csv_export/commons-csv_timeline_V-3_V0_20251104_110513
+[INFO]  导出节点到: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/nodes_bulk.csv
+[INFO]  ✓ 节点导出完成: 1586 个节点 -> csv_export/commons-csv_timeline_V-3_V0_20251104_110513/nodes_bulk.csv
+[INFO]  导出边到: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/edges_bulk.csv
+[INFO]  ✓ 边导出完成: 10443 条边 -> csv_export/commons-csv_timeline_V-3_V0_20251104_110513/edges_bulk.csv
+[INFO]  ✓ 导入脚本已生成: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/import.sh
+[INFO]  ✓ 说明文件已生成: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/README.md
+[INFO]  ========================================
+[INFO]  ✓ CSV 导出完成! 耗时: 0.15 秒
+[INFO]  导出目录: csv_export/commons-csv_timeline_V-3_V0_20251104_110513
+[INFO]  ========================================
+[INFO]  正在停止 Neo4j 服务...
+[INFO]  ✓ Neo4j 服务已停止
+[INFO]  ========================================
+[INFO]  开始 Neo4j 批量离线导入
+[INFO]  ========================================
+[INFO]  节点文件: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/nodes_bulk.csv
+[INFO]  边文件: csv_export/commons-csv_timeline_V-3_V0_20251104_110513/edges_bulk.csv
+[INFO]  数据库名称: neo4j
+[INFO]  Neo4j Home: /Users/mac/Desktop/env/neo4j-community-5.26.13
+[INFO]  ✓ CSV 文件验证通过
+[INFO]  ✓ Neo4j 安装验证通过
+[INFO]  检查 Neo4j 服务状态...
+[INFO]  ✓ Neo4j 服务未运行,可以开始导入
+[INFO]  构建导入命令...
+[INFO]  执行命令:
+[INFO]  /Users/mac/Desktop/env/neo4j-community-5.26.13/bin/neo4j-admin database import full --overwrite-destination=true --nodes=/Users/mac/Desktop/TUGraph/csv_export/commons-csv_timeline_V-3_V0_20251104_110513/nodes_bulk.csv --relationships=/Users/mac/Desktop/TUGraph/csv_export/commons-csv_timeline_V-3_V0_20251104_110513/edges_bulk.csv --skip-duplicate-nodes=true --skip-bad-relationships=true
+[INFO]  
+[INFO]    Nodes:
+[INFO]    Relationships:
+[WARN]    WARNING: heap size 3.556GiB is unnecessarily large for completing this import.
+[INFO]    IMPORT DONE in 1s 257ms. 
+[INFO]    Imported:
+[INFO]    Peak memory usage: 112.4MiB
+[INFO]  ✓ 导入命令执行成功
+[INFO]  ========================================
+[INFO]  ✓ 批量导入成功完成!
+[INFO]  总耗时: 3.52 秒
+[INFO]  ========================================
+[INFO]  
+后续步骤:
+[INFO]  1. 启动 Neo4j: neo4j start
+[INFO]  2. 访问浏览器: http://localhost:7474
+[INFO]  3. 验证数据: MATCH (n) RETURN count(n)
+[INFO]  ✓ 已导入聚合后的多版本演化图谱。
+[INFO]  正在启动 Neo4j 服务...
+[INFO]  ✓ Neo4j 服务已启动
+[INFO]  多版本演化流程完成，总耗时 45.80 秒
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  46.409 s
+[INFO] Finished at: 2025-11-04T11:05:39+08:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
