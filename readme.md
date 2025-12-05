@@ -8,16 +8,6 @@ Maven 3.6.3
 Git
 Python 3.x
 
-# 目录结构
-
-/TUDataset/
-├── TUGraph-main/
-│   └── target_projects/      # 存放需要分析的Git项目
-├── code-diff-analyzer/       # 代码差异分析工具
-├── validcommits/            # 有效的提交记录
-├── covered_pairs/           # 测试-方法覆盖对
-├── progress/                # 断点续跑进度文件
-└── java-evolution-project/  # Docker环境
 
 # 数据处理流程
 
